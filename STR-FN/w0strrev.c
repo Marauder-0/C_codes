@@ -24,7 +24,8 @@ int main()
     char str[100],temp;
     int i,j;
     printf("Enter A string: ");
-    gets(str);
+    fgets(str,sizeof(str),stdin);
+    str[strcspn(str,"\n")] = '\0';
     j = strlen(str);
     i=0;
     while(i<(j-i-1))
