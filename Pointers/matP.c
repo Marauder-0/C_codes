@@ -1,4 +1,25 @@
 #include<stdio.h>
+int scann(int* x)
+{
+    for(int i=0;i<3;++i)
+    {
+        for(int j=0;j<3;++j)
+        {
+            scanf("%d",(x+(i*3)+j));
+        }
+    }
+}
+int printing(int* y)
+{
+    for(int i=0;i<3;++i)
+    {
+        for(int j=0;j<3;++j)
+        {
+            printf("%d\t",*(y+(i*3)+j));
+        }
+        printf("\n");
+    }
+}
 int main()
 {
     int m[3][3],n[3][3],o[3][3] = {0};
@@ -7,39 +28,14 @@ int main()
     b=&n[0][0];
     c=&o[0][0];
     printf("Enter Elements for Matrix M:\n");
-    for(int i=0;i<3;++i)
-    {
-        for(int j=0;j<3;++j)
-        {
-            scanf("%d",(a+(i*3)+j));
-        }
-    }
+    scann(a);
     printf("Entered Matrix M is: \n");
-    for(int i=0;i<3;++i)
-    {
-        for(int j=0;j<3;++j)
-        {
-            printf("%d ",*(a+(i*3)+j));
-        }
-        printf("\n");
-    }
+    printing(a);
     printf("Enter Elements for Matrix N:\n");
-    for(int i=0;i<3;++i)
-    {
-        for(int j=0;j<3;++j)
-        {
-            scanf("%d",(b+(i*3)+j));
-        }
-    }
+    scann(b);
     printf("Entered Matrix N is: \n");
-    for(int i=0;i<3;++i)
-    {
-        for(int j=0;j<3;++j)
-        {
-            printf("%d ",*(b+(i*3)+j));
-        }
-        printf("\n");
-    }
+    printing(b);
+    //Addition
     for(int i=0;i<3;++i)
     {
         for(int j=0;j<3;++j)
@@ -48,13 +44,6 @@ int main()
         }
     }
     printf("Addition Matrix O is: \n");
-    for(int i=0;i<3;++i)
-    {
-        for(int j=0;j<3;++j)
-        {
-            printf("%d ",*(c+(i*3)+j));
-        }
-        printf("\n");
-    }
+    printing(c);
     return 0;
 }
