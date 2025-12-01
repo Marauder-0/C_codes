@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-    int a[10][10],b[10][10],c[10][10] = {0},temp,i,j,k;
+    int a[10][10],b[10][10],c[10][10] = {0},i,j,k;
     int r1,c1,r2,c2;
     //INPUT SIZE
     printf("Enter Row for Matrix A: ");
