@@ -22,11 +22,15 @@ int main()
     }
     strcpy(cptr,ch);
     int newsize = l1 + l2 + 2;
-    cptr = (char*)realloc(cptr,newsize*(sizeof(char)));
-    if(cptr ==  NULL)
+    char*temp = (char*)realloc(cptr,newsize*(sizeof(char)));
+    if(temp ==  NULL)
     {
         printf("Memory Allocation Failed\n");
         exit(0);
+    }
+    else
+    {
+        cptr = temp;
     }
     strcat(cptr," ");
     strcat(cptr,ch1);
