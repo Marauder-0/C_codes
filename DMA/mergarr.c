@@ -10,12 +10,7 @@ int main()
     scanf("%d",&m);
     ptr = (int*)calloc(n,sizeof(int));
     ptr1 = (int*)calloc(m,sizeof(int));
-    if(ptr == NULL)
-    {
-        printf("Memory Allocation Failure.\n");
-        exit(0);
-    }
-    if(ptr1 == NULL)
+    if(ptr == NULL || ptr1 == NULL)
     {
         printf("Memory Allocation Failure.\n");
         exit(0);
