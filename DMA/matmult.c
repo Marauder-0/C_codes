@@ -8,6 +8,11 @@ int main()
     scanf("%d%d",&row1,&col1);
     printf("\nEnter Row&Column of Matrix 2: ");
     scanf("%d%d",&row2,&col2);
+    if (row1 <= 0 || col1 <= 0 || row2 <= 0 || col2 <= 0) 
+    {
+        printf("Dimensions must be positive integers.\n");
+        return 1; 
+    }
     //Row Allocation For Matrix A
     a = (int**)calloc(row1,sizeof(int*));
     //Row Allocation For Matrix B
