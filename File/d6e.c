@@ -1,3 +1,4 @@
+// C program to implement series -> [ X^1/1! - X^3/3! + X^5/5! ... = SUM ]
 #include<stdio.h>
 #include<math.h>
 // Helper function for factorial
