@@ -1,51 +1,44 @@
-// C program to implement series -> [ X^1/1! - X^3/3! + X^5/5! ... = SUM ]
 #include<stdio.h>
 #include<math.h>
-// Helper function for factorial
-long fact(int a)
-{
-    long f = 1;
-    for(int i=1; i<=a; ++i)
-    {
-        f = f * i;
-    }
-    return f;
-}
 int main()
 {
     int n, p = 1;
     float x, sum = 0.0, term;
+    float fact; // Using float here avoids 'long' and makes division easy
     printf("Enter value of X: ");
     scanf("%f", &x);
     printf("Enter terms N: ");
     scanf("%d", &n);
-    // Loop to calculate and print each term
-    for(int i=1; i<=n; ++i)
+    // Main loop for N terms
+    for(int i=1; i<=n; i++)
     {
-        // Calculate current term
-        term = pow(x, p) / fact(p);
+        // --- Step 1: Calculate Factorial of p ---
+        fact = 1.0;
+        for(int j=1; j<=p; j++)
+        {
+            fact = fact * j; 
+        }
 
-        // Print visual part (e.g., 2^3/3!)
+        // --- Step 2: Calculate the full term ---
+        term = pow(x, p) / fact;
+
+        // --- Step 3: Print the visual part ---
         printf("%.0f^%d/%d!", x, p, p);
 
-        // Formatting logic for signs
-        if(i < n)
+        // --- Step 4: Add or Subtract Logic ---
+        if(i % 2 != 0) // Odd steps (1st, 3rd, 5th...)
         {
-            // If step is odd (1,3..), next sign is minus
-            if(i % 2 != 0) printf(" - ");
-            // If step is even (2,4..), next sign is plus
-            else printf(" + ");
+            sum = sum + term;       // Add
+            if(i < n) printf(" - "); // Next sign will be minus
         }
-        else
+        else // Even steps (2nd, 4th...)
         {
-            printf(" = "); // End of series
+            sum = sum - term;       // Subtract
+            if(i < n) printf(" + "); // Next sign will be plus
         }
-        // Math logic: Odd terms add, Even terms subtract
-        if(i % 2 != 0) sum = sum + term;
-        else sum = sum - term;
 
-        p = p + 2; // Increase power (1 -> 3 -> 5)
+        p = p + 2; // Jump power by 2 (1 -> 3 -> 5)
     }
-    printf("%f", sum); // Final result
+    printf(" = %f", sum);
     return 0;
 }
