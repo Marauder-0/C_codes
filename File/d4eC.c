@@ -3,7 +3,7 @@ ABCDE
 ABCD
 ABC
 AB
-A  */
+A         */
 #include<stdio.h>
 int main()
 {
