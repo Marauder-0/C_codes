@@ -1,0 +1,3187 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+  - trigger: ":4"
+    replace: "@Pokétwo c "
+  
+  # Poketwo Catches
+
+  - trigger: "hun"
+    replace: "@Pokétwo c aalabyss"
+    word: true
+  - trigger: "arb"
+    replace: "@Pokétwo c abokku"
+    word: true
+  - trigger: "ab"
+    replace: "@Pokétwo c abusoru"
+    word: true
+  - trigger: "sam"
+    replace: "@Pokétwo c admurai"
+    word: true
+  - trigger: "arch"
+    replace: "@Pokétwo c aeropteryx"
+    word: true
+  - trigger: "hm"
+    replace: "@Pokétwo c aflamanoir"
+    word: true
+  - trigger: "gold"
+    replace: "@Pokétwo c akwakwak"
+    word: true
+  - trigger: "9"
+    replace: "@Pokétwo c alola-form"
+    word: true
+  - trigger: "qq"
+    replace: "@Pokétwo c alolan"
+    word: true
+  - trigger: "am"
+    replace: "@Pokétwo c amagara"
+    word: true
+  - trigger: "arm"
+    replace: "@Pokétwo c amarudo"
+    word: true
+  - trigger: "ncc"
+    replace: "@Pokétwo c amassel"
+    word: true
+  - trigger: "oma"
+    replace: "@Pokétwo c amonistar"
+    word: true
+  - trigger: "om"
+    replace: "@Pokétwo c amonitas"
+    word: true
+  - trigger: "fg"
+    replace: "@Pokétwo c amphizel"
+    word: true
+  - trigger: "bl"
+    replace: "@Pokétwo c ampibidou"
+    word: true
+  - trigger: "grim"
+    replace: "@Pokétwo c angoliath"
+    word: true
+  - trigger: "ano"
+    replace: "@Pokétwo c anopth"
+    word: true
+  - trigger: "cm"
+    replace: "@Pokétwo c apitrini"
+    word: true
+  - trigger: "jel"
+    replace: "@Pokétwo c apoquallyp"
+    word: true
+  - trigger: "dt"
+    replace: "@Pokétwo c arboretoss"
+    word: true
+  - trigger: "god"
+    replace: "@Pokétwo c arceus"
+    word: true
+  - trigger: "bro"
+    replace: "@Pokétwo c archéomire"
+    word: true
+  - trigger: "ava"
+    replace: "@Pokétwo c arktilas"
+    word: true
+  - trigger: "art"
+    replace: "@Pokétwo c artikodin"
+    word: true
+  - trigger: "up"
+    replace: "@Pokétwo c axoloto"
+    word: true
+  - trigger: "aze"
+    replace: "@Pokétwo c azelf"
+    word: true
+  - trigger: "sb"
+    replace: "@Pokétwo c bacabouh"
+    word: true
+  - trigger: "thw"
+    replace: "@Pokétwo c badabouin"
+    word: true
+  - trigger: "scr"
+    replace: "@Pokétwo c baggiguane"
+    word: true
+  - trigger: "qa"
+    replace: "@Pokétwo c bailonda"
+    word: true
+  - trigger: "cam"
+    replace: "@Pokétwo c bakuuda"
+    word: true
+  - trigger: "cti"
+    replace: "@Pokétwo c balbaleze"
+    word: true
+  - trigger: "qw"
+    replace: "@Pokétwo c baldorfish"
+    word: true
+  - trigger: "sp"
+    replace: "@Pokétwo c baneboo"
+    word: true
+  - trigger: "gou"
+    replace: "@Pokétwo c banshitrouye"
+    word: true
+  - trigger: "barr"
+    replace: "@Pokétwo c barrakiefa"
+    word: true
+  - trigger: "bas"
+    replace: "@Pokétwo c barschuft"
+    word: true
+  - trigger: "fe"
+    replace: "@Pokétwo c barschwa"
+    word: true
+  - trigger: "dri"
+    replace: "@Pokétwo c baudrive"
+    word: true
+  - trigger: "tou"
+    replace: "@Pokétwo c bazoucan"
+    word: true
+  - trigger: "pel"
+    replace: "@Pokétwo c bekipan"
+    word: true
+  - trigger: "ark"
+    replace: "@Pokétwo c bergmite"
+    word: true
+  - trigger: "sle"
+    replace: "@Pokétwo c betbeter"
+    word: true
+  - trigger: "vo"
+    replace: "@Pokétwo c biriridama"
+    word: true
+  - trigger: "blac"
+    replace: "@Pokétwo c blacephalon"
+    word: true
+  - trigger: "coo"
+    replace: "@Pokétwo c bleuseille"
+    word: true
+  - trigger: "cas"
+    replace: "@Pokétwo c blindalys"
+    word: true
+  - trigger: "flo"
+    replace: "@Pokétwo c bojelin"
+    word: true
+  - trigger: "abu"
+    replace: "@Pokétwo c bombydou"
+    word: true
+  - trigger: "fla"
+    replace: "@Pokétwo c booster"
+    word: true
+  - trigger: "agg"
+    replace: "@Pokétwo c bossgodora"
+    word: true
+  - trigger: "tang"
+    replace: "@Pokétwo c bouldeneu"
+    word: true
+  - trigger: "baku"
+    replace: "@Pokétwo c boumata"
+    word: true
+  - trigger: "muds"
+    replace: "@Pokétwo c bourrinos"
+    word: true
+  - trigger: "fff"
+    replace: "@Pokétwo c braisillon"
+    word: true
+  - trigger: "sei"
+    replace: "@Pokétwo c branawarz"
+    word: true
+  - trigger: "ches"
+    replace: "@Pokétwo c brigaron"
+    word: true
+  - trigger: "row"
+    replace: "@Pokétwo c brindibou"
+    word: true
+  - trigger: "dcb"
+    replace: "@Pokétwo c briochien"
+    word: true
+  - trigger: "pinc"
+    replace: "@Pokétwo c britzigel"
+    word: true
+  - trigger: "gig"
+    replace: "@Pokétwo c brockoloss"
+    word: true
+  - trigger: "sct"
+    replace: "@Pokétwo c brullschweif"
+    word: true
+  - trigger: "sal"
+    replace: "@Pokétwo c brutalanda"
+    word: true
+  - trigger: "mgm"
+    replace: "@Pokétwo c buba"
+    word: true
+  - trigger: "spo"
+    replace: "@Pokétwo c bubungus"
+    word: true
+  - trigger: "b"
+    replace: "@Pokétwo c buby"
+    word: true
+  - trigger: "bu"
+    replace: "@Pokétwo c bulu"
+    word: true
+  - trigger: "sl"
+    replace: "@Pokétwo c bummelz"
+    word: true
+  - trigger: "bui"
+    replace: "@Pokétwo c buoysel"
+    word: true
+  - trigger: "wor"
+    replace: "@Pokétwo c burmadame"
+    word: true
+  - trigger: "blaz"
+    replace: "@Pokétwo c bursyamo"
+    word: true
+  - trigger: "buz"
+    replace: "@Pokétwo c buzzwole"
+    word: true
+  - trigger: "skd"
+    replace: "@Pokétwo c cabriolaine"
+    word: true
+  - trigger: "deli"
+    replace: "@Pokétwo c cadoizo"
+    word: true
+  - trigger: "mala"
+    replace: "@Pokétwo c calamanero"
+    word: true
+  - trigger: "cal"
+    replace: "@Pokétwo c calyrex"
+    word: true
+  - trigger: "wi"
+    replace: "@Pokétwo c camome"
+    word: true
+  - trigger: "frf"
+    replace: "@Pokétwo c canarticho"
+    word: true
+  - trigger: "cn"
+    replace: "@Pokétwo c caninos"
+    word: true
+  - trigger: "amb"
+    replace: "@Pokétwo c capidextre"
+    word: true
+  - trigger: "ai"
+    replace: "@Pokétwo c capumain"
+    word: true
+  - trigger: "war"
+    replace: "@Pokétwo c carabaffe"
+    word: true
+  - trigger: "lau"
+    replace: "@Pokétwo c carabing"
+    word: true
+  - trigger: "ggg"
+    replace: "@Pokétwo c carchacrok"
+    word: true
+  - trigger: "amg"
+    replace: "@Pokétwo c carmadura"
+    word: true
+  - trigger: "aa"
+    replace: "@Pokétwo c casey"
+    word: true
+  - trigger: "bib"
+    replace: "@Pokétwo c castorno"
+    word: true
+  - trigger: "esc"
+    replace: "@Pokétwo c cavalanzas"
+    word: true
+  - trigger: "cel"
+    replace: "@Pokétwo c celebi"
+    word: true
+  - trigger: "cele"
+    replace: "@Pokétwo c celesteela"
+    word: true
+  - trigger: "sco"
+    replace: "@Pokétwo c cerapendra"
+    word: true
+  - trigger: "wyr"
+    replace: "@Pokétwo c cerbyllin"
+    word: true
+  - trigger: "ch"
+    replace: "@Pokétwo c ceriflor"
+    word: true
+  - trigger: "pur"
+    replace: "@Pokétwo c chacripan"
+    word: true
+  - trigger: "num"
+    replace: "@Pokétwo c chamallot"
+    word: true
+  - trigger: "bre"
+    replace: "@Pokétwo c chapignon"
+    word: true
+  - trigger: "cha"
+    replace: "@Pokétwo c charbambin"
+    word: true
+  - trigger: "medi"
+    replace: "@Pokétwo c charem"
+    word: true
+  - trigger: "cu"
+    replace: "@Pokétwo c charibari"
+    word: true
+  - trigger: "trt"
+    replace: "@Pokétwo c chelterrar"
+    word: true
+  - trigger: "rau"
+    replace: "@Pokétwo c chenipan"
+    word: true
+  - trigger: "wu"
+    replace: "@Pokétwo c chenipotte"
+    word: true
+  - trigger: "ki"
+    replace: "@Pokétwo c cherinbo"
+    word: true
+  - trigger: "gog"
+    replace: "@Pokétwo c chevrumm"
+    word: true
+  - trigger: "chy"
+    replace: "@Pokétwo c chi-yu"
+    word: true
+  - trigger: "chik"
+    replace: "@Pokétwo c chicorita"
+    word: true
+  - trigger: "chp"
+    replace: "@Pokétwo c chien-pao"
+    word: true
+  - trigger: "cpp"
+    replace: "@Pokétwo c chilingel"
+    word: true
+  - trigger: "cnc"
+    replace: "@Pokétwo c chillaccino"
+    word: true
+  - trigger: "mon"
+    replace: "@Pokétwo c chimpenfeu"
+    word: true
+  - trigger: "min"
+    replace: "@Pokétwo c chinchidou"
+    word: true
+  - trigger: "pet"
+    replace: "@Pokétwo c chlorobule"
+    word: true
+  - trigger: "fue"
+    replace: "@Pokétwo c chochodile"
+    word: true
+  - trigger: "lam"
+    replace: "@Pokétwo c chonchie"
+    word: true
+  - trigger: "oo"
+    replace: "@Pokétwo c choreogel"
+    word: true
+  - trigger: "woo"
+    replace: "@Pokétwo c chovsourir"
+    word: true
+  - trigger: "ak"
+    replace: "@Pokétwo c chrysapile"
+    word: true
+  - trigger: "gn"
+    replace: "@Pokétwo c chuchmur"
+    word: true
+  - trigger: "ha"
+    replace: "@Pokétwo c cizayox"
+    word: true
+  - trigger: "kkk"
+    replace: "@Pokétwo c cliticlic"
+    word: true
+  - trigger: "pil"
+    replace: "@Pokétwo c cochignon"
+    word: true
+  - trigger: "kak"
+    replace: "@Pokétwo c coconfort"
+    word: true
+  - trigger: "qx"
+    replace: "@Pokétwo c coiffeton"
+    word: true
+  - trigger: "cra"
+    replace: "@Pokétwo c colhomard"
+    word: true
+  - trigger: "sli"
+    replace: "@Pokétwo c colimucus"
+    word: true
+  - trigger: "tq"
+    replace: "@Pokétwo c colombeau"
+    word: true
+  - trigger: "palo"
+    replace: "@Pokétwo c colossand"
+    word: true
+  - trigger: "pri"
+    replace: "@Pokétwo c colossinge"
+    word: true
+  - trigger: "tnd"
+    replace: "@Pokétwo c compagnol"
+    word: true
+  - trigger: "guf"
+    replace: "@Pokétwo c concombaffe"
+    word: true
+  - trigger: "pe"
+    replace: "@Pokétwo c coquiperl"
+    word: true
+  - trigger: "cooo"
+    replace: "@Pokétwo c corvaillus"
+    word: true
+  - trigger: "cosm"
+    replace: "@Pokétwo c cosmoem"
+    word: true
+  - trigger: "cos"
+    replace: "@Pokétwo c cosmog"
+    word: true
+  - trigger: "tor"
+    replace: "@Pokétwo c cotoise"
+    word: true
+  - trigger: "fur"
+    replace: "@Pokétwo c couafarel"
+    word: true
+  - trigger: "aw"
+    replace: "@Pokétwo c coupenotte"
+    word: true
+  - trigger: "ann"
+    replace: "@Pokétwo c courrousinge"
+    word: true
+  - trigger: "ku"
+    replace: "@Pokétwo c couverdure"
+    word: true
+  - trigger: "kx"
+    replace: "@Pokétwo c crabagarre"
+    word: true
+  - trigger: "cru"
+    replace: "@Pokétwo c crabaraque"
+    word: true
+  - trigger: "db"
+    replace: "@Pokétwo c crabicoque"
+    word: true
+  - trigger: "kw"
+    replace: "@Pokétwo c crabominable"
+    word: true
+  - trigger: "kf"
+    replace: "@Pokétwo c craparoi"
+    word: true
+  - trigger: "cre"
+    replace: "@Pokétwo c crecelia"
+    word: true
+  - trigger: "dru"
+    replace: "@Pokétwo c crimgan"
+    word: true
+  - trigger: "crl"
+    replace: "@Pokétwo c crocalor"
+    word: true
+  - trigger: "aj"
+    replace: "@Pokétwo c croquine"
+    word: true
+  - trigger: "clo"
+    replace: "@Pokétwo c crustabri"
+    word: true
+  - trigger: "acb"
+    replace: "@Pokétwo c cryospino"
+    word: true
+  - trigger: "slu"
+    replace: "@Pokétwo c cupcanaille"
+    word: true
+  - trigger: "cff"
+    replace: "@Pokétwo c curelei"
+    word: true
+  - trigger: "stan"
+    replace: "@Pokétwo c damhirplex"
+    word: true
+  - trigger: "spea"
+    replace: "@Pokétwo c dardargnan"
+    word: true
+  - trigger: "dar"
+    replace: "@Pokétwo c darkrai"
+    word: true
+  - trigger: "daru"
+    replace: "@Pokétwo c darumarond"
+    word: true
+  - trigger: "tyr"
+    replace: "@Pokétwo c debugant"
+    word: true
+  - trigger: "ded"
+    replace: "@Pokétwo c dedenne"
+    word: true
+  - trigger: "vz"
+    replace: "@Pokétwo c delestin"
+    word: true
+  - trigger: "pf"
+    replace: "@Pokétwo c delfinator"
+    word: true
+  - trigger: "dx"
+    replace: "@Pokétwo c delphox"
+    word: true
+  - trigger: "bru"
+    replace: "@Pokétwo c denticrisse"
+    word: true
+  - trigger: "deo"
+    replace: "@Pokétwo c deoxys"
+    word: true
+  - trigger: "garb"
+    replace: "@Pokétwo c deponitox"
+    word: true
+  - trigger: "tyra"
+    replace: "@Pokétwo c despotar"
+    word: true
+  - trigger: "dia"
+    replace: "@Pokétwo c dialga"
+    word: true
+  - trigger: "dian"
+    replace: "@Pokétwo c diancie"
+    word: true
+  - trigger: "zw"
+    replace: "@Pokétwo c dihead"
+    word: true
+  - trigger: "dk"
+    replace: "@Pokétwo c dimoclès"
+    word: true
+  - trigger: "dn"
+    replace: "@Pokétwo c dipplin"
+    word: true
+  - trigger: "drak"
+    replace: "@Pokétwo c dispareptil"
+    word: true
+  - trigger: "do"
+    replace: "@Pokétwo c dodo"
+    word: true
+  - trigger: "km"
+    replace: "@Pokétwo c dodoala"
+    word: true
+  - trigger: "dod"
+    replace: "@Pokétwo c dodorio"
+    word: true
+  - trigger: "lou"
+    replace: "@Pokétwo c dogohmb"
+    word: true
+  - trigger: "bron"
+    replace: "@Pokétwo c dohtakun"
+    word: true
+  - trigger: "dus"
+    replace: "@Pokétwo c dokucale"
+    word: true
+  - trigger: "ten"
+    replace: "@Pokétwo c dokukurage"
+    word: true
+  - trigger: "vik"
+    replace: "@Pokétwo c donarion"
+    word: true
+  - trigger: "donp"
+    replace: "@Pokétwo c donfan"
+    word: true
+  - trigger: "honc"
+    replace: "@Pokétwo c donkarasu"
+    word: true
+  - trigger: "rm"
+    replace: "@Pokétwo c donnersichel"
+    word: true
+  - trigger: "dp"
+    replace: "@Pokétwo c dorameshiya"
+    word: true
+  - trigger: "cot"
+    replace: "@Pokétwo c doudouvet"
+    word: true
+  - trigger: "shel"
+    replace: "@Pokétwo c drackhaus"
+    word: true
+  - trigger: "ddd"
+    replace: "@Pokétwo c dracolosse"
+    word: true
+  - trigger: "aur"
+    replace: "@Pokétwo c dragmara"
+    word: true
+  - trigger: "drif"
+    replace: "@Pokétwo c drifzepeli"
+    word: true
+  - trigger: "dud"
+    replace: "@Pokétwo c dudunsparce"
+    word: true
+  - trigger: "bel"
+    replace: "@Pokétwo c dumbber"
+    word: true
+  - trigger: "sad"
+    replace: "@Pokétwo c dunaconda"
+    word: true
+  - trigger: "aeg"
+    replace: "@Pokétwo c durengard"
+    word: true
+  - trigger: "pid"
+    replace: "@Pokétwo c dusselgurr"
+    word: true
+  - trigger: "chann"
+    replace: "@Pokétwo c ebiwalar"
+    word: true
+  - trigger: "gen"
+    replace: "@Pokétwo c ectoplasma"
+    word: true
+  - trigger: "se"
+    replace: "@Pokétwo c efoserp"
+    word: true
+  - trigger: "ee"
+    replace: "@Pokétwo c eievui"
+    word: true
+  - trigger: "ill"
+    replace: "@Pokétwo c eisenblatt"
+    word: true
+  - trigger: "ib"
+    replace: "@Pokétwo c eisenbundel"
+    word: true
+  - trigger: "itt"
+    replace: "@Pokétwo c eisendorn"
+    word: true
+  - trigger: "imm"
+    replace: "@Pokétwo c eisenfalter"
+    word: true
+  - trigger: "ibb"
+    replace: "@Pokétwo c eisenfels"
+    word: true
+  - trigger: "ij"
+    replace: "@Pokétwo c eisenhals"
+    word: true
+  - trigger: "ih"
+    replace: "@Pokétwo c eisenhand"
+    word: true
+  - trigger: "ic"
+    replace: "@Pokétwo c eisenhaupt"
+    word: true
+  - trigger: "iva"
+    replace: "@Pokétwo c eisenkrieger"
+    word: true
+  - trigger: "it"
+    replace: "@Pokétwo c eisenrad"
+    word: true
+  - trigger: "ele"
+    replace: "@Pokétwo c eleboo"
+    word: true
+  - trigger: "elec"
+    replace: "@Pokétwo c elevoltek"
+    word: true
+  - trigger: "shi"
+    replace: "@Pokétwo c elezeba"
+    word: true
+  - trigger: "yg"
+    replace: "@Pokétwo c embrylex"
+    word: true
+  - trigger: "em"
+    replace: "@Pokétwo c emonga"
+    word: true
+  - trigger: "emp"
+    replace: "@Pokétwo c emperte"
+    word: true
+  - trigger: "vic"
+    replace: "@Pokétwo c empiflor"
+    word: true
+  - trigger: "ena"
+    replace: "@Pokétwo c enamorus"
+    word: true
+  - trigger: "sk"
+    replace: "@Pokétwo c eneco"
+    word: true
+  - trigger: "delc"
+    replace: "@Pokétwo c enekororo"
+    word: true
+  - trigger: "ent"
+    replace: "@Pokétwo c entei"
+    word: true
+  - trigger: "kid"
+    replace: "@Pokétwo c erekiddo"
+    word: true
+  - trigger: "ep"
+    replace: "@Pokétwo c espathra"
+    word: true
+  - trigger: "bxc"
+    replace: "@Pokétwo c espinodon"
+    word: true
+  - trigger: "digg"
+    replace: "@Pokétwo c excavarenne"
+    word: true
+  - trigger: "lic"
+    replace: "@Pokétwo c excelangue"
+    word: true
+  - trigger: "gh"
+    replace: "@Pokétwo c fantominus"
+    word: true
+  - trigger: "elf"
+    replace: "@Pokétwo c farfaduvet"
+    word: true
+  - trigger: "sne"
+    replace: "@Pokétwo c farfuret"
+    word: true
+  - trigger: "un"
+    replace: "@Pokétwo c fasasnob"
+    word: true
+  - trigger: "sin"
+    replace: "@Pokétwo c fatalitee"
+    word: true
+  - trigger: "sy"
+    replace: "@Pokétwo c feelinara"
+    word: true
+  - trigger: "ort"
+    replace: "@Pokétwo c ferdeter"
+    word: true
+  - trigger: "pig"
+    replace: "@Pokétwo c ferkokel"
+    word: true
+  - trigger: "veg"
+    replace: "@Pokétwo c feuillajou"
+    word: true
+  - trigger: "sms"
+    replace: "@Pokétwo c feuiloutan"
+    word: true
+  - trigger: "f"
+    replace: "@Pokétwo c feunnec"
+    word: true
+  - trigger: "fz"
+    replace: "@Pokétwo c fezandipiti"
+    word: true
+  - trigger: "spd"
+    replace: "@Pokétwo c filentrappe"
+    word: true
+  - trigger: "glal"
+    replace: "@Pokétwo c firnontor"
+    word: true
+  - trigger: "broo"
+    replace: "@Pokétwo c flagadoss"
+    word: true
+  - trigger: "gril"
+    replace: "@Pokétwo c flamajou"
+    word: true
+  - trigger: "hp"
+    replace: "@Pokétwo c flambino"
+    word: true
+  - trigger: "emb"
+    replace: "@Pokétwo c flambirex"
+    word: true
+  - trigger: "fia"
+    replace: "@Pokétwo c flambusard"
+    word: true
+  - trigger: "l"
+    replace: "@Pokétwo c flamiaou"
+    word: true
+  - trigger: "ske"
+    replace: "@Pokétwo c flamigator"
+    word: true
+  - trigger: "fm"
+    replace: "@Pokétwo c flaminkno"
+    word: true
+  - trigger: "grill"
+    replace: "@Pokétwo c flamoutan"
+    word: true
+  - trigger: "smr"
+    replace: "@Pokétwo c flamoutan"
+    word: true
+  - trigger: "darm"
+    replace: "@Pokétwo c flampivian"
+    word: true
+  - trigger: "arc"
+    replace: "@Pokétwo c flapteryx"
+    word: true
+  - trigger: "swi"
+    replace: "@Pokétwo c flauschling"
+    word: true
+  - trigger: "ac"
+    replace: "@Pokétwo c flemmli"
+    word: true
+  - trigger: "clau"
+    replace: "@Pokétwo c flingouste"
+    word: true
+  - trigger: "flr"
+    replace: "@Pokétwo c floragato"
+    word: true
+  - trigger: "lur"
+    replace: "@Pokétwo c floramantis"
+    word: true
+  - trigger: "sod"
+    replace: "@Pokétwo c flotajou"
+    word: true
+  - trigger: "smp"
+    replace: "@Pokétwo c flotoutan"
+    word: true
+  - trigger: "flm"
+    replace: "@Pokétwo c flotte-meche"
+    word: true
+  - trigger: "ig"
+    replace: "@Pokétwo c fluffeluff"
+    word: true
+  - trigger: "fi"
+    replace: "@Pokétwo c fluvetin"
+    word: true
+  - trigger: "lea"
+    replace: "@Pokétwo c folipurba"
+    word: true
+  - trigger: "brb"
+    replace: "@Pokétwo c fongus-furie"
+    word: true
+  - trigger: "tk"
+    replace: "@Pokétwo c forgerette"
+    word: true
+  - trigger: "for"
+    replace: "@Pokétwo c forstellka"
+    word: true
+  - trigger: "ot"
+    replace: "@Pokétwo c fouinette"
+    word: true
+  - trigger: "lg"
+    replace: "@Pokétwo c fragilady"
+    word: true
+  - trigger: "oi"
+    replace: "@Pokétwo c fragroin"
+    word: true
+  - trigger: "hd"
+    replace: "@Pokétwo c friedwuff"
+    word: true
+  - trigger: "j"
+    replace: "@Pokétwo c frissonille"
+    word: true
+  - trigger: "rak"
+    replace: "@Pokétwo c frizelbliz"
+    word: true
+  - trigger: "fri"
+    replace: "@Pokétwo c frospino"
+    word: true
+  - trigger: "wis"
+    replace: "@Pokétwo c froussardine"
+    word: true
+  - trigger: "can"
+    replace: "@Pokétwo c frubaila"
+    word: true
+  - trigger: "gfi"
+    replace: "@Pokétwo c fue-percant"
+    word: true
+  - trigger: "inc"
+    replace: "@Pokétwo c fuegro"
+    word: true
+  - trigger: "g"
+    replace: "@Pokétwo c fukamaru"
+    word: true
+  - trigger: "kwt"
+    replace: "@Pokétwo c fulgulairo"
+    word: true
+  - trigger: "fl"
+    replace: "@Pokétwo c furabebe"
+    word: true
+  - trigger: "floe"
+    replace: "@Pokétwo c furaette"
+    word: true
+  - trigger: "flor"
+    replace: "@Pokétwo c furajesu"
+    word: true
+  - trigger: "rgb"
+    replace: "@Pokétwo c furienblitz"
+    word: true
+  - trigger: "venu"
+    replace: "@Pokétwo c fushigibana"
+    word: true
+  - trigger: "bs"
+    replace: "@Pokétwo c fushigidane"
+    word: true
+  - trigger: "url"
+    replace: "@Pokétwo c gachiguma"
+    word: true
+  - trigger: "gal"
+    replace: "@Pokétwo c galagladi"
+    word: true
+  - trigger: "tir"
+    replace: "@Pokétwo c galapaflos"
+    word: true
+  - trigger: "qqq"
+    replace: "@Pokétwo c galarian"
+    word: true
+  - trigger: "gp"
+    replace: "@Pokétwo c galopa"
+    word: true
+  - trigger: "eg"
+    replace: "@Pokétwo c galvaran"
+    word: true
+  - trigger: "claw"
+    replace: "@Pokétwo c gamblast"
+    word: true
+  - trigger: "snd"
+    replace: "@Pokétwo c ganovil"
+    word: true
+  - trigger: "mot"
+    replace: "@Pokétwo c garmeil"
+    word: true
+  - trigger: "hid"
+    replace: "@Pokétwo c garstella"
+    word: true
+  - trigger: "tr"
+    replace: "@Pokétwo c geckarbor"
+    word: true
+  - trigger: "sur"
+    replace: "@Pokétwo c gehweiher"
+    word: true
+  - trigger: "van"
+    replace: "@Pokétwo c gelatini"
+    word: true
+  - trigger: "vani"
+    replace: "@Pokétwo c gelatroppo"
+    word: true
+  - trigger: "gene"
+    replace: "@Pokétwo c genesect"
+    word: true
+  - trigger: "gra"
+    replace: "@Pokétwo c georok"
+    word: true
+  - trigger: "nc"
+    replace: "@Pokétwo c geosali"
+    word: true
+  - trigger: "gole"
+    replace: "@Pokétwo c geowaz"
+    word: true
+  - trigger: "ruf"
+    replace: "@Pokétwo c geronimatz"
+    word: true
+  - trigger: "sce"
+    replace: "@Pokétwo c gewaldro"
+    word: true
+  - trigger: "k"
+    replace: "@Pokétwo c giaru"
+    word: true
+  - trigger: "gim"
+    replace: "@Pokétwo c gierspenst"
+    word: true
+  - trigger: "gi"
+    replace: "@Pokétwo c giratina"
+    word: true
+  - trigger: "paw"
+    replace: "@Pokétwo c gladiantri"
+    word: true
+  - trigger: "kg"
+    replace: "@Pokétwo c gladimperio"
+    word: true
+  - trigger: "reli"
+    replace: "@Pokétwo c glanth"
+    word: true
+  - trigger: "glas"
+    replace: "@Pokétwo c glastrier"
+    word: true
+  - trigger: "gla"
+    replace: "@Pokétwo c glaziola"
+    word: true
+  - trigger: "croa"
+    replace: "@Pokétwo c glibunkel"
+    word: true
+  - trigger: "cg"
+    replace: "@Pokétwo c glibunkel"
+    word: true
+  - trigger: "golu"
+    replace: "@Pokétwo c golemastoc"
+    word: true
+  - trigger: "ph"
+    replace: "@Pokétwo c gomazou"
+    word: true
+  - trigger: "rill"
+    replace: "@Pokétwo c gorythmic"
+    word: true
+  - trigger: "del"
+    replace: "@Pokétwo c goupelin"
+    word: true
+  - trigger: "rok"
+    replace: "@Pokétwo c goupix"
+    word: true
+  - trigger: "le"
+    replace: "@Pokétwo c gourmelet"
+    word: true
+  - trigger: "s"
+    replace: "@Pokétwo c grainipiot"
+    word: true
+  - trigger: "gran"
+    replace: "@Pokétwo c granbulu"
+    word: true
+  - trigger: "3"
+    replace: "@Pokétwo c grandiras"
+    word: true
+  - trigger: "tkn"
+    replace: "@Pokétwo c granforgita"
+    word: true
+  - trigger: "grav"
+    replace: "@Pokétwo c gravalanch"
+    word: true
+  - trigger: "fk"
+    replace: "@Pokétwo c grenousse"
+    word: true
+  - trigger: "sr"
+    replace: "@Pokétwo c gribouraigne"
+    word: true
+  - trigger: "sz"
+    replace: "@Pokétwo c grillepattes"
+    word: true
+  - trigger: "imp"
+    replace: "@Pokétwo c grimalin"
+    word: true
+  - trigger: "gt"
+    replace: "@Pokétwo c gringolem"
+    word: true
+  - trigger: "msf"
+    replace: "@Pokétwo c grondogue"
+    word: true
+  - trigger: "grum"
+    replace: "@Pokétwo c groret"
+    word: true
+  - trigger: "u"
+    replace: "@Pokétwo c grotadmorv"
+    word: true
+  - trigger: "gro"
+    replace: "@Pokétwo c groudon"
+    word: true
+  - trigger: "tep"
+    replace: "@Pokétwo c gruikui"
+    word: true
+  - trigger: "grd"
+    replace: "@Pokétwo c guardevoir"
+    word: true
+  - trigger: "guz"
+    replace: "@Pokétwo c guzzlord"
+    word: true
+  - trigger: "gy"
+    replace: "@Pokétwo c gyarados"
+    word: true
+  - trigger: "sev"
+    replace: "@Pokétwo c habunake"
+    word: true
+  - trigger: "klv"
+    replace: "@Pokétwo c hachecateur"
+    word: true
+  - trigger: "stee"
+    replace: "@Pokétwo c haganeil"
+    word: true
+  - trigger: "dd"
+    replace: "@Pokétwo c hakuryu"
+    word: true
+  - trigger: "scv"
+    replace: "@Pokétwo c halupenjo"
+    word: true
+  - trigger: "har"
+    replace: "@Pokétwo c hariteyama"
+    word: true
+  - trigger: "lom"
+    replace: "@Pokétwo c hasubrero"
+    word: true
+  - trigger: "grot"
+    replace: "@Pokétwo c hayashigame"
+    word: true
+  - trigger: "hea"
+    replace: "@Pokétwo c heatran"
+    word: true
+  - trigger: "dnd"
+    replace: "@Pokétwo c heerashai"
+    word: true
+  - trigger: "iv"
+    replace: "@Pokétwo c herbizarre"
+    word: true
+  - trigger: "fal"
+    replace: "@Pokétwo c hexadron"
+    word: true
+  - trigger: "cry"
+    replace: "@Pokétwo c hexagel"
+    word: true
+  - trigger: "ted"
+    replace: "@Pokétwo c himeguma"
+    word: true
+  - trigger: "cy"
+    replace: "@Pokétwo c hinoarashi"
+    word: true
+  - trigger: "hi"
+    replace: "@Pokétwo c hipopotasu"
+    word: true
+  - trigger: "ft"
+    replace: "@Pokétwo c hirahina"
+    word: true
+  - trigger: "hsa"
+    replace: "@Pokétwo c hisuian arcanine"
+    word: true
+  - trigger: "hav"
+    replace: "@Pokétwo c hisuian avalugg"
+    word: true
+  - trigger: "hb"
+    replace: "@Pokétwo c hisuian braviary"
+    word: true
+  - trigger: "hse"
+    replace: "@Pokétwo c hisuian electrode"
+    word: true
+  - trigger: "hgg"
+    replace: "@Pokétwo c hisuian goodra"
+    word: true
+  - trigger: "hgw"
+    replace: "@Pokétwo c hisuian growlithe"
+    word: true
+  - trigger: "hsga"
+    replace: "@Pokétwo c hisuian growlithe"
+    word: true
+  - trigger: "hl"
+    replace: "@Pokétwo c hisuian lilligant"
+    word: true
+  - trigger: "hq"
+    replace: "@Pokétwo c hisuian qwilfish"
+    word: true
+  - trigger: "hsg"
+    replace: "@Pokétwo c hisuian sliggoo"
+    word: true
+  - trigger: "hss"
+    replace: "@Pokétwo c hisuian sneasel"
+    word: true
+  - trigger: "ht"
+    replace: "@Pokétwo c hisuian typhlosion"
+    word: true
+  - trigger: "hv"
+    replace: "@Pokétwo c hisuian voltorb"
+    word: true
+  - trigger: "hzz"
+    replace: "@Pokétwo c hisuian zoroark"
+    word: true
+  - trigger: "hz"
+    replace: "@Pokétwo c hisuian zorua"
+    word: true
+  - trigger: "sta"
+    replace: "@Pokétwo c hitodeman"
+    word: true
+  - trigger: "char"
+    replace: "@Pokétwo c hitokage"
+    word: true
+  - trigger: "glu"
+    replace: "@Pokétwo c hitokage"
+    word: true
+  - trigger: "lit"
+    replace: "@Pokétwo c hitomoshi"
+    word: true
+  - trigger: "wai"
+    replace: "@Pokétwo c hoeruko"
+    word: true
+  - trigger: "ves"
+    replace: "@Pokétwo c honweisel"
+    word: true
+  - trigger: "hoo"
+    replace: "@Pokétwo c hoopa"
+    word: true
+  - trigger: "ho"
+    replace: "@Pokétwo c hoothoot"
+    word: true
+  - trigger: "hop"
+    replace: "@Pokétwo c hoppspross"
+    word: true
+  - trigger: "bee"
+    replace: "@Pokétwo c hornliu"
+    word: true
+  - trigger: "bd"
+    replace: "@Pokétwo c hornliu"
+    word: true
+  - trigger: "oh"
+    replace: "@Pokétwo c houou"
+    word: true
+  - trigger: "ski"
+    replace: "@Pokétwo c hubelupf"
+    word: true
+  - trigger: "ston"
+    replace: "@Pokétwo c humanolith"
+    word: true
+  - trigger: "hell"
+    replace: "@Pokétwo c hundemon"
+    word: true
+  - trigger: "del"
+    replace: "@Pokétwo c hunduster"
+    word: true
+  - trigger: "amo"
+    replace: "@Pokétwo c hutsassa"
+    word: true
+  - trigger: "hdp"
+    replace: "@Pokétwo c hydrapple"
+    word: true
+  - trigger: "hy"
+    replace: "@Pokétwo c hypnomade"
+    word: true
+  - trigger: "goth"
+    replace: "@Pokétwo c hypnomorba"
+    word: true
+  - trigger: "ta"
+    replace: "@Pokétwo c hypotrempe"
+    word: true
+  - trigger: "uno"
+    replace: "@Pokétwo c icognito"
+    word: true
+  - trigger: "che"
+    replace: "@Pokétwo c igamaro"
+    word: true
+  - trigger: "qui"
+    replace: "@Pokétwo c igastarnish"
+    word: true
+  - trigger: "ord"
+    replace: "@Pokétwo c impergator"
+    word: true
+  - trigger: "dun"
+    replace: "@Pokétwo c insolourdo"
+    word: true
+  - trigger: "scra"
+    replace: "@Pokétwo c irokex"
+    word: true
+  - trigger: "web"
+    replace: "@Pokétwo c itomaru"
+    word: true
+  - trigger: "o"
+    replace: "@Pokétwo c iwark"
+    word: true
+  - trigger: "jib"
+    replace: "@Pokétwo c jibacoil"
+    word: true
+  - trigger: "zig"
+    replace: "@Pokétwo c jiguzaguma"
+    word: true
+  - trigger: "ji"
+    replace: "@Pokétwo c jirachi"
+    word: true
+  - trigger: "th"
+    replace: "@Pokétwo c judokrak"
+    word: true
+  - trigger: "ban"
+    replace: "@Pokétwo c juppeta"
+    word: true
+  - trigger: "dura"
+    replace: "@Pokétwo c jurarudon"
+    word: true
+  - trigger: "hip"
+    replace: "@Pokétwo c kabarudon"
+    word: true
+  - trigger: "kab"
+    replace: "@Pokétwo c kabuto"
+    word: true
+  - trigger: "kabu"
+    replace: "@Pokétwo c kabutopusu"
+    word: true
+  - trigger: "pyr"
+    replace: "@Pokétwo c kaenjinshi"
+    word: true
+  - trigger: "dre"
+    replace: "@Pokétwo c kajirigame"
+    word: true
+  - trigger: "ap"
+    replace: "@Pokétwo c kajitchu"
+    word: true
+  - trigger: "kec"
+    replace: "@Pokétwo c kakureon"
+    word: true
+  - trigger: "cw"
+    replace: "@Pokétwo c kamukame"
+    word: true
+  - trigger: "kang"
+    replace: "@Pokétwo c kangourex"
+    word: true
+  - trigger: "ca"
+    replace: "@Pokétwo c kanivanha"
+    word: true
+  - trigger: "top"
+    replace: "@Pokétwo c kapoerer"
+    word: true
+  - trigger: "lud"
+    replace: "@Pokétwo c kappalores"
+    word: true
+  - trigger: "dei"
+    replace: "@Pokétwo c kapuno"
+    word: true
+  - trigger: "ww"
+    replace: "@Pokétwo c karadonis"
+    word: true
+  - trigger: "sll"
+    replace: "@Pokétwo c karanakushi"
+    word: true
+  - trigger: "sil"
+    replace: "@Pokétwo c karasalis"
+    word: true
+  - trigger: "carr"
+    replace: "@Pokétwo c karippas"
+    word: true
+  - trigger: "tot"
+    replace: "@Pokétwo c karnimani"
+    word: true
+  - trigger: "ko"
+    replace: "@Pokétwo c karpador"
+    word: true
+  - trigger: "kart"
+    replace: "@Pokétwo c kartana"
+    word: true
+  - trigger: "gri"
+    replace: "@Pokétwo c kastadur"
+    word: true
+  - trigger: "fin"
+    replace: "@Pokétwo c keikouo"
+    word: true
+  - trigger: "kd"
+    replace: "@Pokétwo c keldeo"
+    word: true
+  - trigger: "tau"
+    replace: "@Pokétwo c kentauros"
+    word: true
+  - trigger: "dot"
+    replace: "@Pokétwo c keradar"
+    word: true
+  - trigger: "bi"
+    replace: "@Pokétwo c keunotor"
+    word: true
+  - trigger: "sunf"
+    replace: "@Pokétwo c kimawari"
+    word: true
+  - trigger: "bag"
+    replace: "@Pokétwo c kindwurm"
+    word: true
+  - trigger: "kn"
+    replace: "@Pokétwo c kinococo"
+    word: true
+  - trigger: "bello"
+    replace: "@Pokétwo c kireihana"
+    word: true
+  - trigger: "gir"
+    replace: "@Pokétwo c kirinriki"
+    word: true
+  - trigger: "kir"
+    replace: "@Pokétwo c kirlia"
+    word: true
+  - trigger: "lie"
+    replace: "@Pokétwo c kleoparda"
+    word: true
+  - trigger: "nic"
+    replace: "@Pokétwo c kleptifux"
+    word: true
+  - trigger: "kk"
+    replace: "@Pokétwo c kliklak"
+    word: true
+  - trigger: "chin"
+    replace: "@Pokétwo c klingplim"
+    word: true
+  - trigger: "rol"
+    replace: "@Pokétwo c klonkett"
+    word: true
+  - trigger: "cp"
+    replace: "@Pokétwo c klopptopus"
+    word: true
+  - trigger: "tra"
+    replace: "@Pokétwo c knacklion"
+    word: true
+  - trigger: "gg"
+    replace: "@Pokétwo c knarksel"
+    word: true
+  - trigger: "vr"
+    replace: "@Pokétwo c knattox"
+    word: true
+  - trigger: "sc"
+    replace: "@Pokétwo c kofukimushi"
+    word: true
+  - trigger: "pm"
+    replace: "@Pokétwo c kofukimushi"
+    word: true
+  - trigger: "she"
+    replace: "@Pokétwo c kokiyas"
+    word: true
+  - trigger: "ora"
+    replace: "@Pokétwo c kommandutan"
+    word: true
+  - trigger: "ven"
+    replace: "@Pokétwo c kongpang"
+    word: true
+  - trigger: "nuz"
+    replace: "@Pokétwo c konohana"
+    word: true
+  - trigger: "kod"
+    replace: "@Pokétwo c koraidon"
+    word: true
+  - trigger: "kor"
+    replace: "@Pokétwo c koratta"
+    word: true
+  - trigger: "kri"
+    replace: "@Pokétwo c korobohshi"
+    word: true
+  - trigger: "be"
+    replace: "@Pokétwo c kosturso"
+    word: true
+  - trigger: "kin"
+    replace: "@Pokétwo c krabboss"
+    word: true
+  - trigger: "dg"
+    replace: "@Pokétwo c kravarech"
+    word: true
+  - trigger: "sww"
+    replace: "@Pokétwo c krawalloro"
+    word: true
+  - trigger: "ex"
+    replace: "@Pokétwo c krawumms"
+    word: true
+  - trigger: "hei"
+    replace: "@Pokétwo c krebscorps"
+    word: true
+  - trigger: "slw"
+    replace: "@Pokétwo c kriechflugel"
+    word: true
+  - trigger: "saw"
+    replace: "@Pokétwo c kronjuwild"
+    word: true
+  - trigger: "spi"
+    replace: "@Pokétwo c kryppuk"
+    word: true
+  - trigger: "kub"
+    replace: "@Pokétwo c kubfu"
+    word: true
+  - trigger: "eis"
+    replace: "@Pokétwo c kubuin"
+    word: true
+  - trigger: "wat"
+    replace: "@Pokétwo c kukmarda"
+    word: true
+  - trigger: "mf"
+    replace: "@Pokétwo c kungfouine"
+    word: true
+  - trigger: "pine"
+    replace: "@Pokétwo c kunugidama"
+    word: true
+  - trigger: "kr"
+    replace: "@Pokétwo c kurabu"
+    word: true
+  - trigger: "gl"
+    replace: "@Pokétwo c kusaihana"
+    word: true
+  - trigger: "ky"
+    replace: "@Pokétwo c kyogre"
+    word: true
+  - trigger: "swm"
+    replace: "@Pokétwo c laggron"
+    word: true
+  - trigger: "flaa"
+    replace: "@Pokétwo c lainergie"
+    word: true
+  - trigger: "jug"
+    replace: "@Pokétwo c lamantine"
+    word: true
+  - trigger: "shii"
+    replace: "@Pokétwo c lampignon"
+    word: true
+  - trigger: "land"
+    replace: "@Pokétwo c landorus"
+    word: true
+  - trigger: "dpp"
+    replace: "@Pokétwo c lanssorien"
+    word: true
+  - trigger: "drag"
+    replace: "@Pokétwo c lanssorien"
+    word: true
+  - trigger: "lan"
+    replace: "@Pokétwo c lantern"
+    word: true
+  - trigger: "bun"
+    replace: "@Pokétwo c laporeille"
+    word: true
+  - trigger: "so"
+    replace: "@Pokétwo c larméléon"
+    word: true
+  - trigger: "sew"
+    replace: "@Pokétwo c larveyette"
+    word: true
+  - trigger: "mab"
+    replace: "@Pokétwo c larvibule"
+    word: true
+  - trigger: "lat"
+    replace: "@Pokétwo c latias"
+    word: true
+  - trigger: "lati"
+    replace: "@Pokétwo c latios"
+    word: true
+  - trigger: "sir"
+    replace: "@Pokétwo c lauchzelot"
+    word: true
+  - trigger: "mol"
+    replace: "@Pokétwo c lavados"
+    word: true
+  - trigger: "lea"
+    replace: "@Pokétwo c leafia"
+    word: true
+  - trigger: "rl"
+    replace: "@Pokétwo c leboulerou"
+    word: true
+  - trigger: "el"
+    replace: "@Pokétwo c lektrobal"
+    word: true
+  - trigger: "cl"
+    replace: "@Pokétwo c lepumentas"
+    word: true
+  - trigger: "bom"
+    replace: "@Pokétwo c lestombaile"
+    word: true
+  - trigger: "sla"
+    replace: "@Pokétwo c letarking"
+    word: true
+  - trigger: "milk"
+    replace: "@Pokétwo c leuphorie"
+    word: true
+  - trigger: "luc"
+    replace: "@Pokétwo c leveinard"
+    word: true
+  - trigger: "lk"
+    replace: "@Pokétwo c lextremo"
+    word: true
+  - trigger: "int"
+    replace: "@Pokétwo c lezargus"
+    word: true
+  - trigger: "fly"
+    replace: "@Pokétwo c libelldra"
+    word: true
+  - trigger: "lov"
+    replace: "@Pokétwo c liebiskus"
+    word: true
+  - trigger: "nm"
+    replace: "@Pokétwo c lilliterelle"
+    word: true
+  - trigger: "lil"
+    replace: "@Pokétwo c lilyla"
+    word: true
+  - trigger: "jy"
+    replace: "@Pokétwo c lippoutou"
+    word: true
+  - trigger: "li"
+    replace: "@Pokétwo c lizardo"
+    word: true
+  - trigger: "liz"
+    replace: "@Pokétwo c lizardon"
+    word: true
+  - trigger: "lop"
+    replace: "@Pokétwo c lockpin"
+    word: true
+  - trigger: "la"
+    replace: "@Pokétwo c lokhlass"
+    word: true
+  - trigger: "lo"
+    replace: "@Pokétwo c loturzel"
+    word: true
+  - trigger: "lu"
+    replace: "@Pokétwo c lugia"
+    word: true
+  - trigger: "chan"
+    replace: "@Pokétwo c lugulabre"
+    word: true
+  - trigger: "gmm"
+    replace: "@Pokétwo c lumiflora"
+    word: true
+  - trigger: "gm"
+    replace: "@Pokétwo c lumispross"
+    word: true
+  - trigger: "il"
+    replace: "@Pokétwo c lumivole"
+    word: true
+  - trigger: "luna"
+    replace: "@Pokétwo c lunala"
+    word: true
+  - trigger: "lun"
+    replace: "@Pokétwo c lunastein"
+    word: true
+  - trigger: "mac"
+    replace: "@Pokétwo c machollo"
+    word: true
+  - trigger: "mc"
+    replace: "@Pokétwo c machollo"
+    word: true
+  - trigger: "choke"
+    replace: "@Pokétwo c machopeur"
+    word: true
+  - trigger: "mcc"
+    replace: "@Pokétwo c machopeur"
+    word: true
+  - trigger: "champ"
+    replace: "@Pokétwo c mackogneur"
+    word: true
+  - trigger: "mccc"
+    replace: "@Pokétwo c mackogneur"
+    word: true
+  - trigger: "bay"
+    replace: "@Pokétwo c macronium"
+    word: true
+  - trigger: "maa"
+    replace: "@Pokétwo c madatsubomi"
+    word: true
+  - trigger: "boob"
+    replace: "@Pokétwo c magbrant"
+    word: true
+  - trigger: "mage"
+    replace: "@Pokétwo c magearna"
+    word: true
+  - trigger: "qu"
+    replace: "@Pokétwo c magmarashi"
+    word: true
+  - trigger: "mig"
+    replace: "@Pokétwo c magnayen"
+    word: true
+  - trigger: "co"
+    replace: "@Pokétwo c magnetilo"
+    word: true
+  - trigger: "alc"
+    replace: "@Pokétwo c mahoippu"
+    word: true
+  - trigger: "mil"
+    replace: "@Pokétwo c mahomiru"
+    word: true
+  - trigger: "ser"
+    replace: "@Pokétwo c majaspic"
+    word: true
+  - trigger: "ya"
+    replace: "@Pokétwo c makabaja"
+    word: true
+  - trigger: "mak"
+    replace: "@Pokétwo c makunoshita"
+    word: true
+  - trigger: "salaz"
+    replace: "@Pokétwo c malamandre"
+    word: true
+  - trigger: "ce"
+    replace: "@Pokétwo c malvalame"
+    word: true
+  - trigger: "alo"
+    replace: "@Pokétwo c mamanbo"
+    word: true
+  - trigger: "mam"
+    replace: "@Pokétwo c mammochon"
+    word: true
+  - trigger: "ml"
+    replace: "@Pokétwo c mampfaxo"
+    word: true
+  - trigger: "mana"
+    replace: "@Pokétwo c manaphy"
+    word: true
+  - trigger: "yun"
+    replace: "@Pokétwo c manglouton"
+    word: true
+  - trigger: "zan"
+    replace: "@Pokétwo c mangriff"
+    word: true
+  - trigger: "gum"
+    replace: "@Pokétwo c manguspektor"
+    word: true
+  - trigger: "man"
+    replace: "@Pokétwo c mantain"
+    word: true
+  - trigger: "leav"
+    replace: "@Pokétwo c manternel"
+    word: true
+  - trigger: "mt"
+    replace: "@Pokétwo c mantirps"
+    word: true
+  - trigger: "mara"
+    replace: "@Pokétwo c maracamba"
+    word: true
+  - trigger: "bri"
+    replace: "@Pokétwo c marikeck"
+    word: true
+  - trigger: "ma"
+    replace: "@Pokétwo c maril"
+    word: true
+  - trigger: "azu"
+    replace: "@Pokétwo c marilli"
+    word: true
+  - trigger: "or"
+    replace: "@Pokétwo c maritellit"
+    word: true
+  - trigger: "md"
+    replace: "@Pokétwo c marshadow"
+    word: true
+  - trigger: "mas"
+    replace: "@Pokétwo c maskeregen"
+    word: true
+  - trigger: "lin"
+    replace: "@Pokétwo c massuguma"
+    word: true
+  - trigger: "mbs"
+    replace: "@Pokétwo c mastifioso"
+    word: true
+  - trigger: "moo"
+    replace: "@Pokétwo c mastouffe"
+    word: true
+  - trigger: "smo"
+    replace: "@Pokétwo c matadogas"
+    word: true
+  - trigger: "mss"
+    replace: "@Pokétwo c maushold"
+    word: true
+  - trigger: "palp"
+    replace: "@Pokétwo c mebrana"
+    word: true
+  - trigger: "2"
+    replace: "@Pokétwo c mediras"
+    word: true
+  - trigger: "asa"
+    replace: "@Pokétwo c meditie"
+    word: true
+  - trigger: "meg"
+    replace: "@Pokétwo c meganie"
+    word: true
+  - trigger: "yanm"
+    replace: "@Pokétwo c megayanma"
+    word: true
+  - trigger: "con"
+    replace: "@Pokétwo c meistagrif"
+    word: true
+  - trigger: "melt"
+    replace: "@Pokétwo c meltan"
+    word: true
+  - trigger: "so"
+    replace: "@Pokétwo c memmeon"
+    word: true
+  - trigger: "men"
+    replace: "@Pokétwo c menki"
+    word: true
+  - trigger: "te"
+    replace: "@Pokétwo c menokurage"
+    word: true
+  - trigger: "es"
+    replace: "@Pokétwo c mentali"
+    word: true
+  - trigger: "melm"
+    replace: "@Pokétwo c merumetaru"
+    word: true
+  - trigger: "mes"
+    replace: "@Pokétwo c mesprit"
+    word: true
+  - trigger: "meta"
+    replace: "@Pokétwo c metagurosu"
+    word: true
+  - trigger: "di"
+    replace: "@Pokétwo c metamon"
+    word: true
+  - trigger: "met"
+    replace: "@Pokétwo c metangu"
+    word: true
+  - trigger: "mini"
+    replace: "@Pokétwo c meteno"
+    word: true
+  - trigger: "m"
+    replace: "@Pokétwo c mew"
+    word: true
+  - trigger: "mm"
+    replace: "@Pokétwo c mewtwo"
+    word: true
+  - trigger: "tru"
+    replace: "@Pokétwo c miamiasme"
+    word: true
+  - trigger: "mau"
+    replace: "@Pokétwo c miaouss"
+    word: true
+  - trigger: "mew"
+    replace: "@Pokétwo c miascarade"
+    word: true
+  - trigger: "h"
+    replace: "@Pokétwo c miburimu"
+    word: true
+  - trigger: "ny"
+    replace: "@Pokétwo c miezunder"
+    word: true
+  - trigger: "aria"
+    replace: "@Pokétwo c migalos"
+    word: true
+  - trigger: "milo"
+    replace: "@Pokétwo c milokaross"
+    word: true
+  - trigger: "im"
+    replace: "@Pokétwo c mimantis"
+    word: true
+  - trigger: "y"
+    replace: "@Pokétwo c mimigma"
+    word: true
+  - trigger: "d"
+    replace: "@Pokétwo c minidraco"
+    word: true
+  - trigger: "1"
+    replace: "@Pokétwo c miniras"
+    word: true
+  - trigger: "jang"
+    replace: "@Pokétwo c miniras"
+    word: true
+  - trigger: "roo"
+    replace: "@Pokétwo c minisange"
+    word: true
+  - trigger: "bur"
+    replace: "@Pokétwo c minomucchi"
+    word: true
+  - trigger: "mod"
+    replace: "@Pokétwo c miraidon"
+    word: true
+  - trigger: "duo"
+    replace: "@Pokétwo c mitodos"
+    word: true
+  - trigger: "mud"
+    replace: "@Pokétwo c mizugorou"
+    word: true
+  - trigger: "go"
+    replace: "@Pokétwo c mollimorba"
+    word: true
+  - trigger: "sala"
+    replace: "@Pokétwo c molunk"
+    word: true
+  - trigger: "tyran"
+    replace: "@Pokétwo c monargoras"
+    word: true
+  - trigger: "ghl"
+    replace: "@Pokétwo c monetigo"
+    word: true
+  - trigger: "hn"
+    replace: "@Pokétwo c monorpale"
+    word: true
+  - trigger: "uni"
+    replace: "@Pokétwo c monozyto"
+    word: true
+  - trigger: "coa"
+    replace: "@Pokétwo c monthracite"
+    word: true
+  - trigger: "mars"
+    replace: "@Pokétwo c moorabbel"
+    word: true
+  - trigger: "gothi"
+    replace: "@Pokétwo c morbitesse"
+    word: true
+  - trigger: "nu"
+    replace: "@Pokétwo c morlord"
+    word: true
+  - trigger: "ve"
+    replace: "@Pokétwo c morphon"
+    word: true
+  - trigger: "mp"
+    replace: "@Pokétwo c morupeko"
+    word: true
+  - trigger: "rot"
+    replace: "@Pokétwo c motisma"
+    word: true
+  - trigger: "cyl"
+    replace: "@Pokétwo c motorizard"
+    word: true
+  - trigger: "fro"
+    replace: "@Pokétwo c mottineva"
+    word: true
+  - trigger: "sku"
+    replace: "@Pokétwo c moufflair"
+    word: true
+  - trigger: "stun"
+    replace: "@Pokétwo c moufouette"
+    word: true
+  - trigger: "dub"
+    replace: "@Pokétwo c moumouflon"
+    word: true
+  - trigger: "wl"
+    replace: "@Pokétwo c moumouton"
+    word: true
+  - trigger: "os"
+    replace: "@Pokétwo c moustillon"
+    word: true
+  - trigger: "smoo"
+    replace: "@Pokétwo c muchul"
+    word: true
+  - trigger: "vol"
+    replace: "@Pokétwo c muciole"
+    word: true
+  - trigger: "goo"
+    replace: "@Pokétwo c mucuscule"
+    word: true
+  - trigger: "et"
+    replace: "@Pokétwo c mugendaina"
+    word: true
+  - trigger: "mk"
+    replace: "@Pokétwo c mukubird"
+    word: true
+  - trigger: "stp"
+    replace: "@Pokétwo c mukuhawk"
+    word: true
+  - trigger: "mki"
+    replace: "@Pokétwo c munkidori"
+    word: true
+  - trigger: "gud"
+    replace: "@Pokétwo c muplodocus"
+    word: true
+  - trigger: "galv"
+    replace: "@Pokétwo c mygavolt"
+    word: true
+  - trigger: "maw"
+    replace: "@Pokétwo c mysdibule"
+    word: true
+  - trigger: "od"
+    replace: "@Pokétwo c mystherbe"
+    word: true
+  - trigger: "lp"
+    replace: "@Pokétwo c mélancolux"
+    word: true
+  - trigger: "umb"
+    replace: "@Pokétwo c nachtara"
+    word: true
+  - trigger: "pat"
+    replace: "@Pokétwo c nagelotz"
+    word: true
+  - trigger: "whis"
+    replace: "@Pokétwo c namazun"
+    word: true
+  - trigger: "no"
+    replace: "@Pokétwo c nasgnet"
+    word: true
+  - trigger: "x"
+    replace: "@Pokétwo c natio"
+    word: true
+  - trigger: "n"
+    replace: "@Pokétwo c naty"
+    word: true
+  - trigger: "ne"
+    replace: "@Pokétwo c necrozma"
+    word: true
+  - trigger: "mn"
+    replace: "@Pokétwo c negapi"
+    word: true
+  - trigger: "ohb"
+    replace: "@Pokétwo c neitram"
+    word: true
+  - trigger: "lum"
+    replace: "@Pokétwo c neoranto"
+    word: true
+  - trigger: "king"
+    replace: "@Pokétwo c nidoking"
+    word: true
+  - trigger: "quee"
+    replace: "@Pokétwo c nidoqueen"
+    word: true
+  - trigger: "nid"
+    replace: "@Pokétwo c nidoran"
+    word: true
+  - trigger: "rina"
+    replace: "@Pokétwo c nidorina"
+    word: true
+  - trigger: "rino"
+    replace: "@Pokétwo c nidorino"
+    word: true
+  - trigger: "tat"
+    replace: "@Pokétwo c nigirigon"
+    word: true
+  - trigger: "uu"
+    replace: "@Pokétwo c nigosier"
+    word: true
+  - trigger: "ni"
+    replace: "@Pokétwo c nihilego"
+    word: true
+  - trigger: "mu"
+    replace: "@Pokétwo c ninjatom"
+    word: true
+  - trigger: "exe"
+    replace: "@Pokétwo c noadkoko"
+    word: true
+  - trigger: "um"
+    replace: "@Pokétwo c noctali"
+    word: true
+  - trigger: "da"
+    replace: "@Pokétwo c nodulithe"
+    word: true
+  - trigger: "ow"
+    replace: "@Pokétwo c noeunoeuf"
+    word: true
+  - trigger: "cac"
+    replace: "@Pokétwo c noktuska"
+    word: true
+  - trigger: "fn"
+    replace: "@Pokétwo c normifin"
+    word: true
+  - trigger: "gb"
+    replace: "@Pokétwo c nosferalto"
+    word: true
+  - trigger: "zu"
+    replace: "@Pokétwo c nosferapti"
+    word: true
+  - trigger: "cr"
+    replace: "@Pokétwo c nostenfer"
+    word: true
+  - trigger: "sf"
+    replace: "@Pokétwo c nounourson"
+    word: true
+  - trigger: "perr"
+    replace: "@Pokétwo c nyaikingu"
+    word: true
+  - trigger: "glam"
+    replace: "@Pokétwo c nyarmar"
+    word: true
+  - trigger: "sy"
+    replace: "@Pokétwo c nymphali"
+    word: true
+  - trigger: "polll"
+    replace: "@Pokétwo c nyorobon"
+    word: true
+  - trigger: "pol"
+    replace: "@Pokétwo c nyoromo"
+    word: true
+  - trigger: "poli"
+    replace: "@Pokétwo c nyorotono"
+    word: true
+  - trigger: "op"
+    replace: "@Pokétwo c ogerpon"
+    word: true
+  - trigger: "run"
+    replace: "@Pokétwo c oghnatoll"
+    word: true
+  - trigger: "eele"
+    replace: "@Pokétwo c ohmassacre"
+    word: true
+  - trigger: "aud"
+    replace: "@Pokétwo c ohrdoch"
+    word: true
+  - trigger: "oc"
+    replace: "@Pokétwo c okutank"
+    word: true
+  - trigger: "abl"
+    replace: "@Pokétwo c olithena"
+    word: true
+  - trigger: "dl"
+    replace: "@Pokétwo c olivado"
+    word: true
+  - trigger: "sml"
+    replace: "@Pokétwo c olivini"
+    word: true
+  - trigger: "fx"
+    replace: "@Pokétwo c onondo"
+    word: true
+  - trigger: "bin"
+    replace: "@Pokétwo c opermine"
+    word: true
+  - trigger: "prim"
+    replace: "@Pokétwo c oratoria"
+    word: true
+  - trigger: "maro"
+    replace: "@Pokétwo c ossatueur"
+    word: true
+  - trigger: "pop"
+    replace: "@Pokétwo c otaquin"
+    word: true
+  - trigger: "grap"
+    replace: "@Pokétwo c otosupasu"
+    word: true
+  - trigger: "groo"
+    replace: "@Pokétwo c ouistempo"
+    word: true
+  - trigger: "cc"
+    replace: "@Pokétwo c ouisticram"
+    word: true
+  - trigger: "gur"
+    replace: "@Pokétwo c ouvrifier"
+    word: true
+  - trigger: "p"
+    replace: "@Pokétwo c pachirisu"
+    word: true
+  - trigger: "cop"
+    replace: "@Pokétwo c pachyradjah"
+    word: true
+  - trigger: "chim"
+    replace: "@Pokétwo c palimpalim"
+    word: true
+  - trigger: "pal"
+    replace: "@Pokétwo c palkia"
+    word: true
+  - trigger: "pan"
+    replace: "@Pokétwo c pam-pam"
+    word: true
+  - trigger: "p2"
+    replace: "@Pokétwo c pamamo"
+    word: true
+  - trigger: "p3"
+    replace: "@Pokétwo c pamomamo"
+    word: true
+  - trigger: "pang"
+    replace: "@Pokétwo c pandarbare"
+    word: true
+  - trigger: "mrr"
+    replace: "@Pokétwo c pantifrost"
+    word: true
+  - trigger: "jr"
+    replace: "@Pokétwo c pantimimi"
+    word: true
+  - trigger: "mr"
+    replace: "@Pokétwo c pantimos"
+    word: true
+  - trigger: "ska"
+    replace: "@Pokétwo c panzaeron"
+    word: true
+  - trigger: "mot"
+    replace: "@Pokétwo c papilord"
+    word: true
+  - trigger: "age"
+    replace: "@Pokétwo c papinella"
+    word: true
+  - trigger: "jum"
+    replace: "@Pokétwo c papungha"
+    word: true
+  - trigger: "bo"
+    replace: "@Pokétwo c paragoni"
+    word: true
+  - trigger: "para"
+    replace: "@Pokétwo c parasekuto"
+    word: true
+  - trigger: "par"
+    replace: "@Pokétwo c parasu"
+    word: true
+  - trigger: "coc"
+    replace: "@Pokétwo c parfinesse"
+    word: true
+  - trigger: "bolt"
+    replace: "@Pokétwo c parusuwan"
+    word: true
+  - trigger: "cin"
+    replace: "@Pokétwo c pashmilla"
+    word: true
+  - trigger: "ff"
+    replace: "@Pokétwo c passerouge"
+    word: true
+  - trigger: "fd"
+    replace: "@Pokétwo c patachiot"
+    word: true
+  - trigger: "pa"
+    replace: "@Pokétwo c patcheel"
+    word: true
+  - trigger: "az"
+    replace: "@Pokétwo c patchirudon"
+    word: true
+  - trigger: "e"
+    replace: "@Pokétwo c pawou"
+    word: true
+  - trigger: "put"
+    replace: "@Pokétwo c pecharunt"
+    word: true
+  - trigger: "ssc"
+    replace: "@Pokétwo c pelage-sable"
+    word: true
+  - trigger: "mor"
+    replace: "@Pokétwo c pelzebub"
+    word: true
+  - trigger: "amp"
+    replace: "@Pokétwo c pharamp"
+    word: true
+  - trigger: "phe"
+    replace: "@Pokétwo c pheromosa"
+    word: true
+  - trigger: "phi"
+    replace: "@Pokétwo c phione"
+    word: true
+  - trigger: "dr"
+    replace: "@Pokétwo c phlegleon"
+    word: true
+  - trigger: "hab"
+    replace: "@Pokétwo c piafabec"
+    word: true
+  - trigger: "pi"
+    replace: "@Pokétwo c picassaut"
+    word: true
+  - trigger: "duc"
+    replace: "@Pokétwo c piccolente"
+    word: true
+  - trigger: "pp"
+    replace: "@Pokétwo c pichū"
+    word: true
+  - trigger: "trum"
+    replace: "@Pokétwo c piclairon"
+    word: true
+  - trigger: "ctd"
+    replace: "@Pokétwo c pietace"
+    word: true
+  - trigger: "c"
+    replace: "@Pokétwo c pii"
+    word: true
+  - trigger: "pik"
+    replace: "@Pokétwo c pikachū"
+    word: true
+  - trigger: "dra"
+    replace: "@Pokétwo c piondragi"
+    word: true
+  - trigger: "rap"
+    replace: "@Pokétwo c pionskora"
+    word: true
+  - trigger: "cle"
+    replace: "@Pokétwo c pippi"
+    word: true
+  - trigger: "irr"
+    replace: "@Pokétwo c pitrouille"
+    word: true
+  - trigger: "chat"
+    replace: "@Pokétwo c plaudagei"
+    word: true
+  - trigger: "fif"
+    replace: "@Pokétwo c pochiena"
+    word: true
+  - trigger: "p1"
+    replace: "@Pokétwo c pohm"
+    word: true
+  - trigger: "poi"
+    replace: "@Pokétwo c poipole"
+    word: true
+  - trigger: "seak"
+    replace: "@Pokétwo c poissoroy"
+    word: true
+  - trigger: "bea"
+    replace: "@Pokétwo c polagriffe"
+    word: true
+  - trigger: "cbc"
+    replace: "@Pokétwo c polarhume"
+    word: true
+  - trigger: "shup"
+    replace: "@Pokétwo c polichombr"
+    word: true
+  - trigger: "fp"
+    replace: "@Pokétwo c pomdrapi"
+    word: true
+  - trigger: "ach"
+    replace: "@Pokétwo c pondralugon"
+    word: true
+  - trigger: "pon"
+    replace: "@Pokétwo c ponita"
+    word: true
+  - trigger: "por"
+    replace: "@Pokétwo c porygon"
+    word: true
+  - trigger: "pw"
+    replace: "@Pokétwo c porygon2"
+    word: true
+  - trigger: "pz"
+    replace: "@Pokétwo c porygonz"
+    word: true
+  - trigger: "pl"
+    replace: "@Pokétwo c posipi"
+    word: true
+  - trigger: "prin"
+    replace: "@Pokétwo c pottaishi"
+    word: true
+  - trigger: "polt"
+    replace: "@Pokétwo c pottodesu"
+    word: true
+  - trigger: "spr"
+    replace: "@Pokétwo c poussacha"
+    word: true
+  - trigger: "torc"
+    replace: "@Pokétwo c poussifeu"
+    word: true
+  - trigger: "cast"
+    replace: "@Pokétwo c powalen"
+    word: true
+  - trigger: "ti"
+    replace: "@Pokétwo c praktibalk"
+    word: true
+  - trigger: "viv"
+    replace: "@Pokétwo c prismillon"
+    word: true
+  - trigger: "meo"
+    replace: "@Pokétwo c psiaugon"
+    word: true
+  - trigger: "en"
+    replace: "@Pokétwo c psykokwak"
+    word: true
+  - trigger: "esp"
+    replace: "@Pokétwo c psystigri"
+    word: true
+  - trigger: "pt"
+    replace: "@Pokétwo c ptera"
+    word: true
+  - trigger: "pol"
+    replace: "@Pokétwo c ptitard"
+    word: true
+  - trigger: "tyt"
+    replace: "@Pokétwo c ptyranidur"
+    word: true
+  - trigger: "wig"
+    replace: "@Pokétwo c pukurin"
+    word: true
+  - trigger: "bal"
+    replace: "@Pokétwo c puppance"
+    word: true
+  - trigger: "lew"
+    replace: "@Pokétwo c pygraulon"
+    word: true
+  - trigger: "cin"
+    replace: "@Pokétwo c pyrobut"
+    word: true
+  - trigger: "ign"
+    replace: "@Pokétwo c pyronille"
+    word: true
+  - trigger: "gr"
+    replace: "@Pokétwo c quajutsu"
+    word: true
+  - trigger: "poll"
+    replace: "@Pokétwo c quaputzi"
+    word: true
+  - trigger: "pww"
+    replace: "@Pokétwo c quaputzi"
+    word: true
+  - trigger: "pass"
+    replace: "@Pokétwo c quartermak"
+    word: true
+  - trigger: "qxx"
+    replace: "@Pokétwo c quaxwell"
+    word: true
+  - trigger: "sw"
+    replace: "@Pokétwo c quiekel"
+    word: true
+  - trigger: "oq"
+    replace: "@Pokétwo c qwilpik"
+    word: true
+  - trigger: "rab"
+    replace: "@Pokétwo c rabifutto"
+    word: true
+  - trigger: "kroo"
+    replace: "@Pokétwo c rabigator"
+    word: true
+  - trigger: "ge"
+    replace: "@Pokétwo c racaillou"
+    word: true
+  - trigger: "ra"
+    replace: "@Pokétwo c raikou"
+    word: true
+  - trigger: "ram"
+    replace: "@Pokétwo c rameidon"
+    word: true
+  - trigger: "yad"
+    replace: "@Pokétwo c ramoloss"
+    word: true
+  - trigger: "fea"
+    replace: "@Pokétwo c rapasdepic"
+    word: true
+  - trigger: "kor"
+    replace: "@Pokétwo c rattfratz"
+    word: true
+  - trigger: "rat"
+    replace: "@Pokétwo c rattikarl"
+    word: true
+  - trigger: "ray"
+    replace: "@Pokétwo c rayquaza"
+    word: true
+  - trigger: "rar"
+    replace: "@Pokétwo c reakoiru"
+    word: true
+  - trigger: "cx"
+    replace: "@Pokétwo c rediba"
+    word: true
+  - trigger: "reg"
+    replace: "@Pokétwo c regice"
+    word: true
+  - trigger: "regd"
+    replace: "@Pokétwo c regidrago"
+    word: true
+  - trigger: "regi"
+    replace: "@Pokétwo c regieleki"
+    word: true
+  - trigger: "rr"
+    replace: "@Pokétwo c regirock"
+    word: true
+  - trigger: "regis"
+    replace: "@Pokétwo c registeel"
+    word: true
+  - trigger: "lx"
+    replace: "@Pokétwo c rentorar"
+    word: true
+  - trigger: "gv"
+    replace: "@Pokétwo c reptain"
+    word: true
+  - trigger: "res"
+    replace: "@Pokétwo c reshiram"
+    word: true
+  - trigger: "haw"
+    replace: "@Pokétwo c resladero"
+    word: true
+  - trigger: "ao"
+    replace: "@Pokétwo c rettan"
+    word: true
+  - trigger: "rvr"
+    replace: "@Pokétwo c revavroom"
+    word: true
+  - trigger: "abo"
+    replace: "@Pokétwo c rexblisar"
+    word: true
+  - trigger: "rh"
+    replace: "@Pokétwo c rhinocorne"
+    word: true
+  - trigger: "swo"
+    replace: "@Pokétwo c rhinolove"
+    word: true
+  - trigger: "gtu"
+    replace: "@Pokétwo c riesenzahn"
+    word: true
+  - trigger: "rhy"
+    replace: "@Pokétwo c rihornior"
+    word: true
+  - trigger: "fa"
+    replace: "@Pokétwo c rikikirin"
+    word: true
+  - trigger: "ur"
+    replace: "@Pokétwo c ringuma"
+    word: true
+  - trigger: "ri"
+    replace: "@Pokétwo c rioru"
+    word: true
+  - trigger: "don"
+    replace: "@Pokétwo c rizeros"
+    word: true
+  - trigger: "iw"
+    replace: "@Pokétwo c rocabot"
+    word: true
+  - trigger: "kro"
+    replace: "@Pokétwo c rokkaiman"
+    word: true
+  - trigger: "pu"
+    replace: "@Pokétwo c rondoudou"
+    word: true
+  - trigger: "rel"
+    replace: "@Pokétwo c ronflex"
+    word: true
+  - trigger: "skw"
+    replace: "@Pokétwo c rongourmand"
+    word: true
+  - trigger: "dril"
+    replace: "@Pokétwo c rototaupe"
+    word: true
+  - trigger: "thi"
+    replace: "@Pokétwo c roublenard"
+    word: true
+  - trigger: "pg"
+    replace: "@Pokétwo c roucarnage"
+    word: true
+  - trigger: "pd"
+    replace: "@Pokétwo c roucoups"
+    word: true
+  - trigger: "bx"
+    replace: "@Pokétwo c roussil"
+    word: true
+  - trigger: "bud"
+    replace: "@Pokétwo c rozbouton"
+    word: true
+  - trigger: "ro"
+    replace: "@Pokétwo c rozeria"
+    word: true
+  - trigger: "ros"
+    replace: "@Pokétwo c rozureido"
+    word: true
+  - trigger: "rib"
+    replace: "@Pokétwo c rubombelle"
+    word: true
+  - trigger: "vil"
+    replace: "@Pokétwo c ruffresia"
+    word: true
+  - trigger: "lc"
+    replace: "@Pokétwo c rukario"
+    word: true
+  - trigger: "lux"
+    replace: "@Pokétwo c rukushio"
+    word: true
+  - trigger: "ludi"
+    replace: "@Pokétwo c runpappa"
+    word: true
+  - trigger: "sa"
+    replace: "@Pokétwo c sabelette"
+    word: true
+  - trigger: "san"
+    replace: "@Pokétwo c sablaireau"
+    word: true
+  - trigger: "tus"
+    replace: "@Pokétwo c sabonea"
+    word: true
+  - trigger: "sanda"
+    replace: "@Pokétwo c sadaija"
+    word: true
+  - trigger: "pod"
+    replace: "@Pokétwo c safcon"
+    word: true
+  - trigger: "gor"
+    replace: "@Pokétwo c sakurabyss"
+    word: true
+  - trigger: "toxt"
+    replace: "@Pokétwo c salarsen"
+    word: true
+  - trigger: "bsc"
+    replace: "@Pokétwo c salmagnis"
+    word: true
+  - trigger: "ga"
+    replace: "@Pokétwo c saltigant"
+    word: true
+  - trigger: "sha"
+    replace: "@Pokétwo c samehader"
+    word: true
+  - trigger: "bb"
+    replace: "@Pokétwo c sapereau"
+    word: true
+  - trigger: "tan"
+    replace: "@Pokétwo c saquedeneu"
+    word: true
+  - trigger: "goli"
+    replace: "@Pokétwo c sarmuraï"
+    word: true
+  - trigger: "arr"
+    replace: "@Pokétwo c sashikamasu"
+    word: true
+  - trigger: "bg"
+    replace: "@Pokétwo c satchimushi"
+    word: true
+  - trigger: "bp"
+    replace: "@Pokétwo c satchimushi"
+    word: true
+  - trigger: "lee"
+    replace: "@Pokétwo c sawamular"
+    word: true
+  - trigger: "bsh"
+    replace: "@Pokétwo c scalproie"
+    word: true
+  - trigger: "pin"
+    replace: "@Pokétwo c scarabrute"
+    word: true
+  - trigger: "tm"
+    replace: "@Pokétwo c schallquap"
+    word: true
+  - trigger: "sd"
+    replace: "@Pokétwo c schilterus"
+    word: true
+  - trigger: "loc"
+    replace: "@Pokétwo c schlapor"
+    word: true
+  - trigger: "lot"
+    replace: "@Pokétwo c schlukwech"
+    word: true
+  - trigger: "gu"
+    replace: "@Pokétwo c schluppuck"
+    word: true
+  - trigger: "lick"
+    replace: "@Pokétwo c schlurplek"
+    word: true
+  - trigger: "barb"
+    replace: "@Pokétwo c schmerbe"
+    word: true
+  - trigger: "mag"
+    replace: "@Pokétwo c schneckmag"
+    word: true
+  - trigger: "sno"
+    replace: "@Pokétwo c schneppke"
+    word: true
+  - trigger: "shm"
+    replace: "@Pokétwo c schnuthelm"
+    word: true
+  - trigger: "su"
+    replace: "@Pokétwo c schwalbini"
+    word: true
+  - trigger: "tai"
+    replace: "@Pokétwo c schwalboss"
+    word: true
+  - trigger: "swe"
+    replace: "@Pokétwo c schwalboss"
+    word: true
+  - trigger: "roll"
+    replace: "@Pokétwo c scobolide"
+    word: true
+  - trigger: "cent"
+    replace: "@Pokétwo c scolocendre"
+    word: true
+  - trigger: "gli"
+    replace: "@Pokétwo c scorplane"
+    word: true
+  - trigger: "bol"
+    replace: "@Pokétwo c sedimantur"
+    word: true
+  - trigger: "sea"
+    replace: "@Pokétwo c seemon"
+    word: true
+  - trigger: "dram"
+    replace: "@Pokétwo c sen-long"
+    word: true
+  - trigger: "i"
+    replace: "@Pokétwo c sepiatop"
+    word: true
+  - trigger: "wwl"
+    replace: "@Pokétwo c serpente-eau"
+    word: true
+  - trigger: "sni"
+    replace: "@Pokétwo c serpifeu"
+    word: true
+  - trigger: "q"
+    replace: "@Pokétwo c shadow"
+    word: true
+  - trigger: "ms"
+    replace: "@Pokétwo c shaofouine"
+    word: true
+  - trigger: "shay"
+    replace: "@Pokétwo c shaymin"
+    word: true
+  - trigger: "ss"
+    replace: "@Pokétwo c sheinux"
+    word: true
+  - trigger: "tn"
+    replace: "@Pokétwo c shibishirasu"
+    word: true
+  - trigger: "ll"
+    replace: "@Pokétwo c shishiko"
+    word: true
+  - trigger: "craw"
+    replace: "@Pokétwo c shizariger"
+    word: true
+  - trigger: "dew"
+    replace: "@Pokétwo c shizukumo"
+    word: true
+  - trigger: "puru"
+    replace: "@Pokétwo c shnurgarst"
+    word: true
+  - trigger: "vap"
+    replace: "@Pokétwo c showers"
+    word: true
+  - trigger: "str"
+    replace: "@Pokétwo c sichlor"
+    word: true
+  - trigger: "hor"
+    replace: "@Pokétwo c sihorn"
+    word: true
+  - trigger: "silv"
+    replace: "@Pokétwo c silvally"
+    word: true
+  - trigger: "dec"
+    replace: "@Pokétwo c silvarro"
+    word: true
+  - trigger: "inf"
+    replace: "@Pokétwo c simiabraz"
+    word: true
+  - trigger: "ala"
+    replace: "@Pokétwo c simsala"
+    word: true
+  - trigger: "sud"
+    replace: "@Pokétwo c simularbre"
+    word: true
+  - trigger: "snt"
+    replace: "@Pokétwo c sinistcha"
+    word: true
+  - trigger: "dhel"
+    replace: "@Pokétwo c sinistrail"
+    word: true
+  - trigger: "rb"
+    replace: "@Pokétwo c skarabaks"
+    word: true
+  - trigger: "her"
+    replace: "@Pokétwo c skaraborn"
+    word: true
+  - trigger: "glis"
+    replace: "@Pokétwo c skorgro"
+    word: true
+  - trigger: "butt"
+    replace: "@Pokétwo c smettbo"
+    word: true
+  - trigger: "sm"
+    replace: "@Pokétwo c smogon"
+    word: true
+  - trigger: "wea"
+    replace: "@Pokétwo c snibunna"
+    word: true
+  - trigger: "snl"
+    replace: "@Pokétwo c snieboss"
+    word: true
+  - trigger: "per"
+    replace: "@Pokétwo c snobilikat"
+    word: true
+  - trigger: "is"
+    replace: "@Pokétwo c sohnano"
+    word: true
+  - trigger: "solg"
+    replace: "@Pokétwo c solgaleo"
+    word: true
+  - trigger: "mun"
+    replace: "@Pokétwo c somniam"
+    word: true
+  - trigger: "mush"
+    replace: "@Pokétwo c somnivora"
+    word: true
+  - trigger: "on"
+    replace: "@Pokétwo c sonistrelle"
+    word: true
+  - trigger: "vanil"
+    replace: "@Pokétwo c sorbouboul"
+    word: true
+  - trigger: "hhh"
+    replace: "@Pokétwo c sorcilence"
+    word: true
+  - trigger: "wim"
+    replace: "@Pokétwo c sovkipou"
+    word: true
+  - trigger: "spe"
+    replace: "@Pokétwo c spectrier"
+    word: true
+  - trigger: "hau"
+    replace: "@Pokétwo c spectrum"
+    word: true
+  - trigger: "exc"
+    replace: "@Pokétwo c stalobor"
+    word: true
+  - trigger: "st"
+    replace: "@Pokétwo c staralili"
+    word: true
+  - trigger: "star"
+    replace: "@Pokétwo c staross"
+    word: true
+  - trigger: "lai"
+    replace: "@Pokétwo c stollrak"
+    word: true
+  - trigger: "a"
+    replace: "@Pokétwo c stollunior"
+    word: true
+  - trigger: "cb"
+    replace: "@Pokétwo c strassie"
+    word: true
+  - trigger: "ts"
+    replace: "@Pokétwo c sucreine"
+    word: true
+  - trigger: "si"
+    replace: "@Pokétwo c sunahebi"
+    word: true
+  - trigger: "cor"
+    replace: "@Pokétwo c sunnygo"
+    word: true
+  - trigger: "swa"
+    replace: "@Pokétwo c swaroness"
+    word: true
+  - trigger: "sig"
+    replace: "@Pokétwo c symvolara"
+    word: true
+  - trigger: "ob"
+    replace: "@Pokétwo c tachifusaguma"
+    word: true
+  - trigger: "tf"
+    replace: "@Pokétwo c tafforgita"
+    word: true
+  - trigger: "gf"
+    replace: "@Pokétwo c taginguru"
+    word: true
+  - trigger: "oba"
+    replace: "@Pokétwo c tamazarashi"
+    word: true
+  - trigger: "bulu"
+    replace: "@Pokétwo c tapu bulu"
+    word: true
+  - trigger: "fini"
+    replace: "@Pokétwo c tapu fini"
+    word: true
+  - trigger: "koko"
+    replace: "@Pokétwo c tapu koko"
+    word: true
+  - trigger: "lele"
+    replace: "@Pokétwo c tapu lele"
+    word: true
+  - trigger: "ara"
+    replace: "@Pokétwo c tarenbulle"
+    word: true
+  - trigger: "pwr"
+    replace: "@Pokétwo c tartard"
+    word: true
+  - trigger: "app"
+    replace: "@Pokétwo c taruppuru"
+    word: true
+  - trigger: "po"
+    replace: "@Pokétwo c taubsi"
+    word: true
+  - trigger: "wg"
+    replace: "@Pokétwo c taupikeau"
+    word: true
+  - trigger: "dig"
+    replace: "@Pokétwo c taupiqueur"
+    word: true
+  - trigger: "hh"
+    replace: "@Pokétwo c teburimu"
+    word: true
+  - trigger: "nj"
+    replace: "@Pokétwo c tekkanin"
+    word: true
+  - trigger: "sh"
+    replace: "@Pokétwo c tengulist"
+    word: true
+  - trigger: "tc"
+    replace: "@Pokétwo c tentagra"
+    word: true
+  - trigger: "nut"
+    replace: "@Pokétwo c tentantel"
+    word: true
+  - trigger: "tcc"
+    replace: "@Pokétwo c tenterra"
+    word: true
+  - trigger: "rem"
+    replace: "@Pokétwo c teppouo"
+    word: true
+  - trigger: "cld"
+    replace: "@Pokétwo c terraiste"
+    word: true
+  - trigger: "herd"
+    replace: "@Pokétwo c terribark"
+    word: true
+  - trigger: "td"
+    replace: "@Pokétwo c tetampoule"
+    word: true
+  - trigger: "bar"
+    replace: "@Pokétwo c thanathora"
+    word: true
+  - trigger: "jolt"
+    replace: "@Pokétwo c thunders"
+    word: true
+  - trigger: "thu"
+    replace: "@Pokétwo c thundurus"
+    word: true
+  - trigger: "mudb"
+    replace: "@Pokétwo c tiboudet"
+    word: true
+  - trigger: "tl"
+    replace: "@Pokétwo c ting-lu"
+    word: true
+  - trigger: "pip"
+    replace: "@Pokétwo c tiplouf"
+    word: true
+  - trigger: "tar"
+    replace: "@Pokétwo c tissenboule"
+    word: true
+  - trigger: "leo"
+    replace: "@Pokétwo c todoggler"
+    word: true
+  - trigger: "wal"
+    replace: "@Pokétwo c todoseruga"
+    word: true
+  - trigger: "tt"
+    replace: "@Pokétwo c togechick"
+    word: true
+  - trigger: "tog"
+    replace: "@Pokétwo c togedemaru"
+    word: true
+  - trigger: "ttt"
+    replace: "@Pokétwo c togekiss"
+    word: true
+  - trigger: "t"
+    replace: "@Pokétwo c togepi"
+    word: true
+  - trigger: "bst"
+    replace: "@Pokétwo c toridepusu"
+    word: true
+  - trigger: "gas"
+    replace: "@Pokétwo c toritodon"
+    word: true
+  - trigger: "torn"
+    replace: "@Pokétwo c tornadus"
+    word: true
+  - trigger: "ty"
+    replace: "@Pokétwo c tornupto"
+    word: true
+  - trigger: "ck"
+    replace: "@Pokétwo c toroggon"
+    word: true
+  - trigger: "tro"
+    replace: "@Pokétwo c toropiusu"
+    word: true
+  - trigger: "bla"
+    replace: "@Pokétwo c tortank"
+    word: true
+  - trigger: "tur"
+    replace: "@Pokétwo c tortipouss"
+    word: true
+  - trigger: "gd"
+    replace: "@Pokétwo c tosakinto"
+    word: true
+  - trigger: "sun"
+    replace: "@Pokétwo c tournegrin"
+    word: true
+  - trigger: "gos"
+    replace: "@Pokétwo c tournicoton"
+    word: true
+  - trigger: "grv"
+    replace: "@Pokétwo c toutombe"
+    word: true
+  - trigger: "to"
+    replace: "@Pokétwo c toxapex"
+    word: true
+  - trigger: "tox"
+    replace: "@Pokétwo c toxiquak"
+    word: true
+  - trigger: "tx"
+    replace: "@Pokétwo c toxizap"
+    word: true
+  - trigger: "cub"
+    replace: "@Pokétwo c tragosso"
+    word: true
+  - trigger: "r"
+    replace: "@Pokétwo c trasla"
+    word: true
+  - trigger: "dro"
+    replace: "@Pokétwo c traumato"
+    word: true
+  - trigger: "mum"
+    replace: "@Pokétwo c traunfugil"
+    word: true
+  - trigger: "mis"
+    replace: "@Pokétwo c traunmagil"
+    word: true
+  - trigger: "wgg"
+    replace: "@Pokétwo c triopikeau"
+    word: true
+  - trigger: "dug"
+    replace: "@Pokétwo c triopikeur"
+    word: true
+  - trigger: "hyd"
+    replace: "@Pokétwo c trioxhydre"
+    word: true
+  - trigger: "ohr"
+    replace: "@Pokétwo c trombork"
+    word: true
+  - trigger: "fo"
+    replace: "@Pokétwo c trompignon"
+    word: true
+  - trigger: "cf"
+    replace: "@Pokétwo c trousselin"
+    word: true
+  - trigger: "shu"
+    replace: "@Pokétwo c tsubotsubo"
+    word: true
+  - trigger: "stak"
+    replace: "@Pokétwo c tsundetsunde"
+    word: true
+  - trigger: "cof"
+    replace: "@Pokétwo c tutankafer"
+    word: true
+  - trigger: "nin"
+    replace: "@Pokétwo c tutinin"
+    word: true
+  - trigger: "alt"
+    replace: "@Pokétwo c tyltalis"
+    word: true
+  - trigger: "w"
+    replace: "@Pokétwo c tyltto"
+    word: true
+  - trigger: "0"
+    replace: "@Pokétwo c typ:Null"
+    word: true
+  - trigger: "all"
+    replace: "@Pokétwo c tyracroc"
+    word: true
+  - trigger: "onv"
+    replace: "@Pokétwo c uhafnir"
+    word: true
+  - trigger: "wee"
+    replace: "@Pokétwo c ultrigaria"
+    word: true
+  - trigger: "av"
+    replace: "@Pokétwo c uochirudon"
+    word: true
+  - trigger: "dv"
+    replace: "@Pokétwo c uonoragon"
+    word: true
+  - trigger: "urs"
+    replace: "@Pokétwo c urshifu"
+    word: true
+  - trigger: "px"
+    replace: "@Pokétwo c urugamosu"
+    word: true
+  - trigger: "bon"
+    replace: "@Pokétwo c usohachi"
+    word: true
+  - trigger: "ux"
+    replace: "@Pokétwo c uxie"
+    word: true
+  - trigger: "crad"
+    replace: "@Pokétwo c vacilys"
+    word: true
+  - trigger: "skr"
+    replace: "@Pokétwo c venalgue"
+    word: true
+  - trigger: "fs"
+    replace: "@Pokétwo c venipatte"
+    word: true
+  - trigger: "mus"
+    replace: "@Pokétwo c venuflibis"
+    word: true
+  - trigger: "vib"
+    replace: "@Pokétwo c vibraninf"
+    word: true
+  - trigger: "v"
+    replace: "@Pokétwo c victini"
+    word: true
+  - trigger: "bmb"
+    replace: "@Pokétwo c virevorreur"
+    word: true
+  - trigger: "bm"
+    replace: "@Pokétwo c virovent"
+    word: true
+  - trigger: "fr"
+    replace: "@Pokétwo c viskuse"
+    word: true
+  - trigger: "dee"
+    replace: "@Pokétwo c vivaldaim"
+    word: true
+  - trigger: "volc"
+    replace: "@Pokétwo c volcanion"
+    word: true
+  - trigger: "magc"
+    replace: "@Pokétwo c volcaropod"
+    word: true
+  - trigger: "mane"
+    replace: "@Pokétwo c voltenso"
+    word: true
+  - trigger: "mar"
+    replace: "@Pokétwo c voltilamm"
+    word: true
+  - trigger: "yam"
+    replace: "@Pokétwo c voltoutou"
+    word: true
+  - trigger: "pro"
+    replace: "@Pokétwo c voluminas"
+    word: true
+  - trigger: "vu"
+    replace: "@Pokétwo c vostourno"
+    word: true
+  - trigger: "nine"
+    replace: "@Pokétwo c vulnona"
+    word: true
+  - trigger: "com"
+    replace: "@Pokétwo c wakasyamo"
+    word: true
+  - trigger: "bra"
+    replace: "@Pokétwo c washakwil"
+    word: true
+  - trigger: "eld"
+    replace: "@Pokétwo c watashiraga"
+    word: true
+  - trigger: "jol"
+    replace: "@Pokétwo c wattzapf"
+    word: true
+  - trigger: "wail"
+    replace: "@Pokétwo c whaloh"
+    word: true
+  - trigger: "fu"
+    replace: "@Pokétwo c wiesenior"
+    word: true
+  - trigger: "ind"
+    replace: "@Pokétwo c wimessir"
+    word: true
+  - trigger: "ar"
+    replace: "@Pokétwo c windie"
+    word: true
+  - trigger: "wc"
+    replace: "@Pokétwo c wo-chien"
+    word: true
+  - trigger: "wo"
+    replace: "@Pokétwo c woingenau"
+    word: true
+  - trigger: "ly"
+    replace: "@Pokétwo c wolwerock"
+    word: true
+  - trigger: "hap"
+    replace: "@Pokétwo c wonneira"
+    word: true
+  - trigger: "xx"
+    replace: "@Pokétwo c xerneas"
+    word: true
+  - trigger: "xu"
+    replace: "@Pokétwo c xurkitree"
+    word: true
+  - trigger: "mur"
+    replace: "@Pokétwo c yamikarasu"
+    word: true
+  - trigger: "sab"
+    replace: "@Pokétwo c yamirami"
+    word: true
+  - trigger: "yan"
+    replace: "@Pokétwo c yanyanma"
+    word: true
+  - trigger: "vi"
+    replace: "@Pokétwo c yarukimono"
+    word: true
+  - trigger: "pup"
+    replace: "@Pokétwo c ymphect"
+    word: true
+  - trigger: "gre"
+    replace: "@Pokétwo c yokubarisu"
+    word: true
+  - trigger: "yk"
+    replace: "@Pokétwo c yorkleff"
+    word: true
+  - trigger: "noc"
+    replace: "@Pokétwo c yorunozuku"
+    word: true
+  - trigger: "sno"
+    replace: "@Pokétwo c yukikaburi"
+    word: true
+  - trigger: "fros"
+    replace: "@Pokétwo c yukimenoko"
+    word: true
+  - trigger: "sn"
+    replace: "@Pokétwo c yukiwarashi"
+    word: true
+  - trigger: "ka"
+    replace: "@Pokétwo c yungerer"
+    word: true
+  - trigger: "yy"
+    replace: "@Pokétwo c yveltal"
+    word: true
+  - trigger: "zac"
+    replace: "@Pokétwo c zacian"
+    word: true
+  - trigger: "zam"
+    replace: "@Pokétwo c zamazenta"
+    word: true
+  - trigger: "zap"
+    replace: "@Pokétwo c zapdos"
+    word: true
+  - trigger: "wt"
+    replace: "@Pokétwo c zapetrel"
+    word: true
+  - trigger: "eel"
+    replace: "@Pokétwo c zapplalek"
+    word: true
+  - trigger: "zar"
+    replace: "@Pokétwo c zarude"
+    word: true
+  - trigger: "zeb"
+    replace: "@Pokétwo c zebritz"
+    word: true
+  - trigger: "zek"
+    replace: "@Pokétwo c zekrom"
+    word: true
+  - trigger: "sq"
+    replace: "@Pokétwo c zenigame"
+    word: true
+  - trigger: "zer"
+    replace: "@Pokétwo c zeraora"
+    word: true
+  - trigger: "kric"
+    replace: "@Pokétwo c zirpeise"
+    word: true
+  - trigger: "zz"
+    replace: "@Pokétwo c zoroaku"
+    word: true
+  - trigger: "zo"
+    replace: "@Pokétwo c zorua"
+    word: true
+  - trigger: "cd"
+    replace: "@Pokétwo c zugaidos"
+    word: true
+  - trigger: "yo"
+    replace: "@Pokétwo c zwirrfinst"
+    word: true
+  - trigger: "dusc"
+    replace: "@Pokétwo c zwirrklop"
+    word: true
+  - trigger: "dc"
+    replace: "@Pokétwo c zwirrklop"
+    word: true
+  - trigger: "du"
+    replace: "@Pokétwo c zwirrlicht"
+    word: true
+  - trigger: "de"
+    replace: "@Pokétwo c zwottronin"
+    word: true
+  - trigger: "zy"
+    replace: "@Pokétwo c zygarde"
+    word: true
+  - trigger: "reu"
+    replace: "@Pokétwo c zytomega"
+    word: true
+  - trigger: "mlk"
+    replace: "@Pokétwo c écrémeuh"
+    word: true
+  - trigger: "ele"
+    replace: "@Pokétwo c élektek"
+    word: true
