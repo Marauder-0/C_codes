@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<math.h>
+// C program to implement series -> [ X^1/1! - X^3/3! + X^5/5! ... = SUM ]
+#include <stdio.h>
+#include <math.h>
 int main()
 {
     int n, p = 1;
@@ -10,35 +11,27 @@ int main()
     printf("Enter terms N: ");
     scanf("%d", &n);
     // Main loop for N terms
-    for(int i=1; i<=n; i++)
+    for (int i = 1; i <= n; i++)
     {
         // --- Step 1: Calculate Factorial of p ---
         fact = 1.0;
-        for(int j=1; j<=p; j++)
+        for (int j = 1; j <= p; j++)
         {
-            fact = fact * j; 
+            fact = fact * j;
         }
-
         // --- Step 2: Calculate the full term ---
         term = pow(x, p) / fact;
-
-        // --- Step 3: Print the visual part ---
-        printf("%.0f^%d/%d!", x, p, p);
-
-        // --- Step 4: Add or Subtract Logic ---
-        if(i % 2 != 0) // Odd steps (1st, 3rd, 5th...)
+        // --- Step 3: Add or Subtract Logic ---
+        if (i % 2 != 0) // Odd steps (1st, 3rd, 5th...)
         {
-            sum = sum + term;       // Add
-            if(i < n) printf(" - "); // Next sign will be minus
+            sum = sum + term; // Add
         }
         else // Even steps (2nd, 4th...)
         {
-            sum = sum - term;       // Subtract
-            if(i < n) printf(" + "); // Next sign will be plus
+            sum = sum - term; // Subtract
         }
-
         p = p + 2; // Jump power by 2 (1 -> 3 -> 5)
     }
-    printf(" = %f", sum);
+    printf(" Output of the series: %f", sum);
     return 0;
 }
