@@ -1,0 +1,13 @@
+# Executables
+*.out
+*.o
+*.obj
+*.exe
+Linked Lists/singly
+Sorting/bubble
+Sorting/insert
+Sorting/select
+
+# Zip files and IDE settings
+vs.zip
+.vscode/
