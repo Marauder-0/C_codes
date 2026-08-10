@@ -4,6 +4,7 @@
 *.obj
 *.exe
 Linked Lists/singly
+Linked Lists/doubly
 Sorting/bubble
 Sorting/insert
 Sorting/select
