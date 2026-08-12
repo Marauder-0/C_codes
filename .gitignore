@@ -5,9 +5,11 @@
 *.exe
 Linked Lists/singly
 Linked Lists/doubly
+Linked Lists/circ
 Sorting/bubble
 Sorting/insert
 Sorting/select
+HTML
 
 # Zip files and IDE settings
 vs.zip

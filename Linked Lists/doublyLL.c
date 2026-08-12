@@ -13,6 +13,7 @@ void deleteEnd();
 void deleteGiven(int key);
 void reversal();
 void traversal();
+void searching(int key);
 int main() {
   int choice, key, value;
   while (1) {
@@ -24,7 +25,8 @@ int main() {
     printf("6. Delete Given Node.\n");
     printf("7. Reverse.\n");
     printf("8. Display List.\n");
-    printf("9. Exiting Program.\n");
+    printf("9. Search an Element.\n");
+    printf("10. Exiting Program.\n");
     printf("Enter Choice: ");
     scanf("%d", &choice);
     switch (choice) {
@@ -72,6 +74,11 @@ int main() {
       traversal();
       break;
     case 9:
+      printf("Enter Key to be Searched in List: ");
+      scanf("%d", &key);
+      searching(key);
+      break;
+    case 10:
       printf("Exiting Program..\n");
       return 0;
       break;
@@ -219,4 +226,23 @@ void reversal() {
     temp = temp->prev;
   }
   printf("\n=======================================\n");
+}
+void searching(int key) {
+  if (start == NULL) {
+    printf("List is Empty!!\n");
+    return;
+  }
+  int i = 1;
+  struct node *temp = start;
+  while (temp != NULL) {
+    if (temp->info == key) {
+      printf("Key Found at Index %d.\n", i);
+      return;
+    } else {
+      i++;
+      temp = temp->next;
+    }
+  }
+  printf("Element Not Found!!\n");
+  return;
 }
