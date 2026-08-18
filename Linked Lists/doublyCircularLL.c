@@ -7,9 +7,9 @@ struct node {
 void insertBegin(int value);
 void insertEnd(int value);
 void insertAfter(int key, int value);
-// void deleteBegin();
-// void deleteEnd();
-// void deleteGiven(int key);
+void deleteBegin();
+void deleteEnd();
+void deleteGiven(int key);
 void traversal();
 // void reversal();
 // void searching(int key);
@@ -49,22 +49,22 @@ int main() {
       insertAfter(key, value);
       traversal();
       break;
-    // case 4:
-    //   printf("Deleting FIrst Node..\n");
-    //   deleteBegin();
-    //   traversal();
-    //   break;
-    // case 5:
-    //   printf("Deleting Last Node..\n");
-    //   deleteEnd();
-    //   traversal();
-    //   break;
-    // case 6:
-    //   printf("Enter Node's value to be deleted: ");
-    //   scanf("%d", &key);
-    //   deleteGiven(key);
-    //   traversal();
-    //   break;
+    case 4:
+      printf("Deleting FIrst Node..\n");
+      deleteBegin();
+      traversal();
+      break;
+    case 5:
+      printf("Deleting Last Node..\n");
+      deleteEnd();
+      traversal();
+      break;
+    case 6:
+      printf("Enter Node's value to be deleted: ");
+      scanf("%d", &key);
+      deleteGiven(key);
+      traversal();
+      break;
     // case 7:
     //   printf("Reversed Linked List: \n");
     //   reversal();
@@ -154,6 +154,65 @@ void insertAfter(int key, int value) {
     }
   }
 }
+void deleteBegin() {
+  struct node *temp = start;
+  if (start == NULL) {
+    printf("Empty List!!\n");
+    return;
+  } else if (start->next == start) {
+    start = NULL;
+    free(temp);
+  } else {
+    temp->prev->next = start->next;
+    temp->next->prev = temp->prev;
+    start = temp->next;
+    printf("Deleted: %d\n", temp->info);
+    free(temp);
+  }
+}
+void deleteEnd() {
+  if (start == NULL) {
+    printf("Empty List\n");
+    return;
+  }
+  struct node *tail = start->prev;
+  if (start->next == start) {
+    start = NULL;
+    free(start);
+    return;
+  } else {
+    tail->prev->next = tail->next;
+    start->prev = tail->prev;
+    printf("Deleted: %d\n", tail->info);
+    free(tail);
+  }
+}
+void deleteGiven(int key) {
+  struct node *temp = start;
+  if (start == NULL) {
+    printf("Empty List\n");
+    return;
+  } else {
+    while (temp->info != key) {
+      temp = temp->next;
+      if (temp == start) {
+        break;
+      }
+    }
+    if (temp == start && temp->info != key) {
+      printf("Key not Found!!\n");
+      return;
+    } else if (temp == start && temp->info == key) {
+      deleteBegin();
+      return;
+    } else {
+      temp->prev->next = temp->next;
+      temp->next->prev = temp->prev;
+      printf("Deleted: %d\n", temp->info);
+      free(temp);
+    }
+  }
+}
 void traversal() {
   struct node *ptr = start;
   printf("==============================================\n");
@@ -170,3 +229,4 @@ void traversal() {
   }
   printf("\n==============================================\n");
 }
+void reversal() {}

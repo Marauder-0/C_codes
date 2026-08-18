@@ -1,17 +1,28 @@
-# Executables
-*.out
+# Compiled Object files
 *.o
 *.obj
-*.exe
-Linked Lists/singly
-Linked Lists/doubly
-Linked Lists/circ
-Linked Lists/dbcirc
-Sorting/bubble
-Sorting/insert
-Sorting/select
-HTML
 
-# Zip files and IDE settings
-vs.zip
+# Executables
+*.exe
+*.out
+*.app
+doubly
+poly
+doublyC
+
+# Dynamic Libraries
+*.dll
+*.so
+*.dylib
+
+# Debug files
+*.pdb
+*.ilk
+
+# IDE / Editor folders
 .vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
